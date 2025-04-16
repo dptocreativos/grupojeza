@@ -4,7 +4,7 @@
 <head>
 	<title>Grupo Jeza - Mayorista de Turismo & Tour Operador Internacional</title>
 	<link rel="icon" href="https://iili.io/30iDsgS.png" type="image/png">
-		<meta content="summary_large_image" name="twitter:card">
+	<meta content="summary_large_image" name="twitter:card">
 	<meta content="website" property="og:type">
 	<meta content="" property="og:description">
 	<meta content="https://7u557nfatb.preview-beefreedesign.com/6ES9" property="og:url">
@@ -230,7 +230,6 @@
 		.bee-row-7 .bee-col-2,
 		.bee-row-7 .bee-col-3,
 		.bee-row-7 .bee-col-4,
-		.bee-row-8 .bee-col-1,
 		.bee-row-8 .bee-col-2,
 		.bee-row-8 .bee-col-3,
 		.bee-row-8 .bee-col-4 {
@@ -277,6 +276,20 @@
 			width: 100%
 		}
 
+		.bee-row-8 .bee-col-1 {
+			background-color: #ffffff;
+			padding-bottom: 40px;
+			padding-top: 5px;
+			border-radius: 10px
+		}
+
+		.bee-row-10 .bee-row-content,
+		.bee-row-9 .bee-row-content {
+			background-repeat: no-repeat;
+			border-radius: 0;
+			color: #000000
+		}
+
 		.bee-row-8 .bee-col-1 .bee-block-1 {
 			padding: 20px 30px 25px;
 			text-align: center;
@@ -315,16 +328,18 @@
 			width: 100%
 		}
 
-		.bee-row-10,
 		.bee-row-9 {
+			background-color: #f9f9f9;
 			background-repeat: no-repeat
 		}
 
-		.bee-row-10 .bee-row-content,
 		.bee-row-9 .bee-row-content {
-			background-repeat: no-repeat;
-			border-radius: 0;
-			color: #000000
+			background-color: #f9f9f9;
+			padding-bottom: 50px
+		}
+
+		.bee-row-10 {
+			background-repeat: no-repeat
 		}
 
 		.bee-row-1 .bee-col-1 .bee-block-3 h2 {
@@ -388,9 +403,16 @@
 			}
 
 			.bee-row-1 .bee-col-1 .bee-block-2,
-			.bee-row-7 .bee-row-content,
-			.bee-row-8 .bee-row-content {
+			.bee-row-7 .bee-row-content {
 				padding: 0 30px !important
+			}
+
+			.bee-row-8 .bee-row-content {
+				padding: 0 30px 35px !important
+			}
+
+			.bee-row-9 .bee-row-content {
+				padding: 45px 0 50px !important
 			}
 
 			.bee-row-4 .bee-col-1,
@@ -408,11 +430,6 @@
 				margin-bottom: 20px !important
 			}
 
-			.bee-row-1 .bee-col-1 .bee-block-2 img {
-				float: left !important;
-				margin: auto !important
-			}
-
 			.bee-row-1 .bee-col-1 .bee-block-3 {
 				padding: 20px 30px 10px;
 				text-align: left
@@ -421,6 +438,11 @@
 			.bee-row-1 .bee-col-1 .bee-block-3 h2 {
 				font-size: 30px;
 				text-align: left
+			}
+
+			.bee-row-1 .bee-col-1 .bee-block-2 img {
+				float: left !important;
+				margin: auto !important
 			}
 
 			.bee-row-1 .bee-col-1 .bee-block-4 {
@@ -433,20 +455,14 @@
 				height: 40px !important
 			}
 
-			.bee-row-1 .bee-col-2 .bee-block-3 {
-				padding: 0 !important;
-				text-align: center !important
-			}
-
 			.bee-row-1 .bee-col-2 .bee-block-2 {
 				padding: 0 30px 5px !important;
 				text-align: center !important;
 				font-size: 13px !important
 			}
 
-			.bee-row-2 .bee-col-1 .bee-block-1,
-			.bee-row-2 .bee-col-1 .bee-block-3 {
-				height: 25px !important
+			.bee-row-1 .bee-col-2 .bee-block-4 {
+				height: 30px !important
 			}
 
 			.bee-row-1 .bee-col-1 .bee-block-5 {
@@ -464,6 +480,10 @@
 				text-align: center !important;
 				font-size: 13px !important;
 				line-height: auto !important
+			}
+
+			.bee-row-2 .bee-col-1 .bee-block-1 {
+				height: 25px !important
 			}
 		}
 
@@ -487,20 +507,9 @@
 		}
 
 		.bee-row-3 .bee-col-1 .bee-block-1 h2,
-		.bee-row-6 .bee-col-1 .bee-block-1 h2,
-		.bee-row-9 .bee-col-1 .bee-block-1 h2 {
-			direction: ltr;
-			font-family: Montserrat, "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
-			letter-spacing: normal
-		}
-
 		.bee-row-3 .bee-col-1 .bee-block-2 {
-			color: #555555;
 			direction: ltr;
 			font-family: Montserrat, "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
-			font-size: 17px;
-			font-weight: 500;
-			letter-spacing: 0;
 			line-height: 120%;
 			text-align: left
 		}
@@ -509,17 +518,24 @@
 			color: #3b3a3a;
 			font-size: 28px;
 			font-weight: 700;
-			line-height: 120%;
-			text-align: left
+			letter-spacing: normal
+		}
+
+		.bee-row-3 .bee-col-1 .bee-block-2 {
+			color: #555555;
+			font-size: 17px;
+			font-weight: 500;
+			letter-spacing: 0
 		}
 
 		.bee-row-6 .bee-col-1 .bee-block-1 h2,
-		.bee-row-9 .bee-col-1 .bee-block-1 h2 {
-			color: #3b3a3a;
-			font-size: 28px;
-			font-weight: 700;
+		.bee-row-6 .bee-col-1 .bee-block-2,
+		.bee-row-9 .bee-col-1 .bee-block-1 h2,
+		.bee-row-9 .bee-col-1 .bee-block-2 {
 			line-height: 120%;
-			text-align: center
+			text-align: center;
+			direction: ltr;
+			font-family: Montserrat, "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif
 		}
 
 		.bee-row-7 .bee-col-1 .bee-block-1 h3,
@@ -541,20 +557,19 @@
 		}
 
 		.bee-row-6 .bee-col-1 .bee-block-2,
-		.bee-row-8 .bee-col-2 .bee-block-3 a,
 		.bee-row-9 .bee-col-1 .bee-block-2 {
 			color: #555555;
-			direction: ltr;
-			font-family: Montserrat, "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+			font-size: 17px;
 			font-weight: 500;
 			letter-spacing: 0
 		}
 
-		.bee-row-6 .bee-col-1 .bee-block-2,
-		.bee-row-9 .bee-col-1 .bee-block-2 {
-			font-size: 17px;
-			line-height: 120%;
-			text-align: center
+		.bee-row-6 .bee-col-1 .bee-block-1 h2,
+		.bee-row-9 .bee-col-1 .bee-block-1 h2 {
+			color: #3b3a3a;
+			font-size: 28px;
+			font-weight: 700;
+			letter-spacing: normal
 		}
 
 		.bee-row-8 .bee-col-2 .bee-block-3 a:hover {
@@ -572,23 +587,38 @@
 			border-radius: 8px;
 			border-right: 1px solid #555555;
 			border-top: 1px solid #555555;
+			color: #555555;
+			direction: ltr;
+			font-family: Montserrat, "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
 			font-size: 13px;
+			font-weight: 500;
+			letter-spacing: 0;
 			line-height: 200%;
 			padding: 5px 20px;
 			width: auto
 		}
 
 		@media (max-width:768px) {
-			.bee-row-1 .bee-col-2 .bee-block-4 {
-				height: 30px !important
+			.bee-row-2 .bee-col-1 .bee-block-3 {
+				height: 25px !important
+			}
+
+			.bee-row-1 .bee-col-2 .bee-block-3 {
+				padding: 0 !important;
+				text-align: center !important
+			}
+
+			.bee-row-3 .bee-col-1 .bee-block-1 {
+				padding: 40px 30px 5px
 			}
 
 			.bee-row-3 .bee-col-1 .bee-block-2 {
 				padding: 5px 30px 20px !important
 			}
 
-			.bee-row-3 .bee-col-1 .bee-block-1 {
-				padding: 40px 30px 5px
+			.bee-row-6 .bee-col-1 .bee-block-2 {
+				padding: 5px 30px 0 !important;
+				font-size: 15px !important
 			}
 
 			.bee-row-6 .bee-col-1 .bee-block-1 {
@@ -598,15 +628,6 @@
 			.bee-row-6 .bee-col-1 .bee-block-1 h2,
 			.bee-row-9 .bee-col-1 .bee-block-1 h2 {
 				font-size: 22px
-			}
-
-			.bee-row-6 .bee-col-1 .bee-block-2 {
-				padding: 5px 30px 0 !important;
-				font-size: 15px !important
-			}
-
-			.bee-row-9 .bee-col-1 .bee-block-1 {
-				padding: 35px 30px 7px
 			}
 
 			.bee-row-8 .bee-col-2 .bee-block-3 {
@@ -621,9 +642,13 @@
 				padding: 5px 30px 30px !important;
 				font-size: 15px !important
 			}
+
+			.bee-row-9 .bee-col-1 .bee-block-1 {
+				padding: 0 30px 7px
+			}
 		}
 	</style>
-	<script type="text/javascript" async="" charset="utf-8" src="https://www.gstatic.com/recaptcha/releases/hbAq-YhJxOnlU-7cpgBoAJHb/recaptcha__es.js" crossorigin="anonymous" integrity="sha384-DM7WX/2oNKzF82+c5ydtlc8NIa1MdhopPFnmdOKSFpHS6E94+oZdPmxXYzufiK92"></script><script async="" defer="" src="https://www.google.com/recaptcha/api.js"></script>
+	<script async="" defer="" src="https://www.google.com/recaptcha/api.js"></script>
 	<script>
 		function onSubmit(token) {
 			for (const form of document.getElementsByClassName("recaptcha-form")) {
@@ -638,7 +663,7 @@
 	</script>
 </head>
 
-<body>
+<body __processed_16e159fd-219d-4f56-ba24-1dfee9474ed7__="true">
 	<div class="bee-page-container">
 		<div class="bee-row bee-row-1">
 			<div class="bee-row-content">
@@ -3172,10 +3197,10 @@
 			<div class="bee-row-content">
 				<div class="bee-col bee-col-1 bee-col-w12">
 					<div class="bee-block bee-block-1 bee-heading">
-						<h2><span class="tinyMce-placeholder">Servicios Principales</span> </h2>
+						<h2><span class="tinyMce-placeholder">Nuestros Servicios</span> </h2>
 					</div>
 					<div class="bee-block bee-block-2 bee-paragraph">
-						<p>Con Grupo Jeza, viajar es más fácil que nunca. Descubre todos los destinos que tenemos para ti, haz click y selecciona tu favorito.</p>
+						<p>En Grupo Jeza somos tu aliado en viajes, bodas, eventos y más.</p>
 					</div>
 					<div class="bee-block bee-block-3 bee-html-block">
 						<div style="width: calc(100% - 100px); margin: auto; overflow: hidden; position: relative;">
@@ -3284,7 +3309,7 @@
 								}
 							</style>
 							<div class="gallery-wrapper">
-								<div class="gallery-container" id="gallery" style="transform: translateX(-233px);">
+								<div class="gallery-container" id="gallery" style="transform: translateX(0px);">
 									<!-- 8 elementos con sombra y título -->
 									<div class="gallery-item">
 										<img alt="item" src="https://iili.io/30QwkS2.jpg">
