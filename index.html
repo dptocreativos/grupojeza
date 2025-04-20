@@ -16,7 +16,7 @@
 
 
 	
-	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900" rel="stylesheet" type="text/css">
 	<style>
 		.bee-row,
 		.bee-row-content {
@@ -336,10 +336,10 @@
 
 		.bee-row-1 .bee-col-1 .bee-block-3 h2,
 		.bee-row-1 .bee-col-1 .bee-block-4 {
+			text-align: left;
 			color: #ffffff;
 			direction: ltr;
 			font-family: Montserrat, "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
-			text-align: left;
 			line-height: 120%
 		}
 
@@ -368,37 +368,6 @@
 			font-size: 36px;
 			font-weight: 700;
 			letter-spacing: normal
-		}
-
-		.bee-row-1 .bee-col-1 .bee-block-4 {
-			font-size: 21px;
-			font-weight: 400;
-			letter-spacing: 0
-		}
-
-		.bee-row-1 .bee-col-1 .bee-block-4 a,
-		.bee-row-1 .bee-col-2 .bee-block-2 a,
-		.bee-row-10 .bee-col-1 .bee-block-2 a,
-		.bee-row-3 .bee-col-1 .bee-block-2 a,
-		.bee-row-6 .bee-col-1 .bee-block-2 a,
-		.bee-row-7 .bee-col-1 .bee-block-2 a {
-			color: #7747FF
-		}
-
-		.bee-row-1 .bee-col-1 .bee-block-5 a,
-		.bee-row-1 .bee-col-2 .bee-block-2 {
-			color: #ffffff;
-			direction: ltr;
-			font-family: Montserrat, "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
-			letter-spacing: 0
-		}
-
-		.bee-row-1 .bee-col-1 .bee-block-4 p:not(:last-child),
-		.bee-row-10 .bee-col-1 .bee-block-2 p:not(:last-child),
-		.bee-row-3 .bee-col-1 .bee-block-2 p:not(:last-child),
-		.bee-row-6 .bee-col-1 .bee-block-2 p:not(:last-child),
-		.bee-row-7 .bee-col-1 .bee-block-2 p:not(:last-child) {
-			margin-bottom: 0
 		}
 
 		@media (max-width:768px) {
@@ -462,21 +431,6 @@
 				text-align: left
 			}
 
-			.bee-row-1 .bee-col-1 .bee-block-4 {
-				padding: 10px 30px !important;
-				text-align: left !important;
-				font-size: 20px !important
-			}
-
-			.bee-row-1 .bee-col-1 .bee-block-6 {
-				height: 40px !important
-			}
-
-			.bee-row-1 .bee-col-2 .bee-block-3 {
-				padding: 0 !important;
-				text-align: center !important
-			}
-
 			.bee-row-1 .bee-col-1 .bee-block-5 {
 				padding: 10px 30px !important
 			}
@@ -493,6 +447,10 @@
 				font-size: 13px !important;
 				line-height: auto !important
 			}
+
+			.bee-row-1 .bee-col-1 .bee-block-6 {
+				height: 40px !important
+			}
 		}
 
 		.bee-row-1 .bee-col-1 .bee-block-5 a:hover {
@@ -507,26 +465,47 @@
 		.bee-row-1 .bee-col-1 .bee-block-5 a {
 			background-color: #159e36;
 			border-radius: 8px;
+			color: #ffffff;
+			direction: ltr;
+			font-family: Montserrat, "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
 			font-size: 16px;
 			font-weight: 600;
+			letter-spacing: 0;
 			line-height: 200%;
 			padding: 5px 20px;
 			width: auto
 		}
 
-		.bee-row-10 .bee-col-1 .bee-block-1 h2,
-		.bee-row-3 .bee-col-1 .bee-block-1 h2,
-		.bee-row-6 .bee-col-1 .bee-block-1 h2,
-		.bee-row-7 .bee-col-1 .bee-block-1 h2 {
-			color: #3b3a3a;
-			font-size: 28px;
-			font-weight: 700;
-			letter-spacing: normal
+		.bee-row-1 .bee-col-1 .bee-block-4 {
+			font-size: 21px;
+			font-weight: 400;
+			letter-spacing: 0
+		}
+
+		.bee-row-1 .bee-col-1 .bee-block-4 a,
+		.bee-row-1 .bee-col-2 .bee-block-2 a,
+		.bee-row-10 .bee-col-1 .bee-block-2 a,
+		.bee-row-3 .bee-col-1 .bee-block-2 a,
+		.bee-row-6 .bee-col-1 .bee-block-2 a,
+		.bee-row-7 .bee-col-1 .bee-block-2 a {
+			color: #7747FF
+		}
+
+		.bee-row-1 .bee-col-1 .bee-block-4 p:not(:last-child),
+		.bee-row-10 .bee-col-1 .bee-block-2 p:not(:last-child),
+		.bee-row-3 .bee-col-1 .bee-block-2 p:not(:last-child),
+		.bee-row-6 .bee-col-1 .bee-block-2 p:not(:last-child),
+		.bee-row-7 .bee-col-1 .bee-block-2 p:not(:last-child) {
+			margin-bottom: 0
 		}
 
 		.bee-row-1 .bee-col-2 .bee-block-2 {
+			color: #ffffff;
+			direction: ltr;
+			font-family: Montserrat, "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
 			font-size: 14px;
 			font-weight: 500;
+			letter-spacing: 0;
 			line-height: 120%;
 			text-align: right
 		}
@@ -539,10 +518,18 @@
 		.bee-row-3 .bee-col-1 .bee-block-2,
 		.bee-row-6 .bee-col-1 .bee-block-1 h2,
 		.bee-row-6 .bee-col-1 .bee-block-2 {
+			text-align: left;
 			direction: ltr;
 			font-family: Montserrat, "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
-			line-height: 120%;
-			text-align: left
+			line-height: 120%
+		}
+
+		.bee-row-3 .bee-col-1 .bee-block-1 h2,
+		.bee-row-6 .bee-col-1 .bee-block-1 h2 {
+			color: #3b3a3a;
+			font-size: 28px;
+			font-weight: 700;
+			letter-spacing: normal
 		}
 
 		.bee-row-3 .bee-col-1 .bee-block-2,
@@ -554,21 +541,15 @@
 		}
 
 		.bee-row-10 .bee-col-1 .bee-block-1 h2,
-		.bee-row-10 .bee-col-1 .bee-block-2,
-		.bee-row-7 .bee-col-1 .bee-block-1 h2,
-		.bee-row-7 .bee-col-1 .bee-block-2 {
-			line-height: 120%;
-			text-align: center;
+		.bee-row-7 .bee-col-1 .bee-block-1 h2 {
+			color: #3b3a3a;
 			direction: ltr;
-			font-family: Montserrat, "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif
-		}
-
-		.bee-row-10 .bee-col-1 .bee-block-2,
-		.bee-row-7 .bee-col-1 .bee-block-2 {
-			color: #555555;
-			font-size: 17px;
-			font-weight: 500;
-			letter-spacing: 0
+			font-family: Montserrat, "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+			font-size: 28px;
+			font-weight: 700;
+			letter-spacing: normal;
+			line-height: 120%;
+			text-align: center
 		}
 
 		.bee-row-8 .bee-col-1 .bee-block-1 h3,
@@ -589,6 +570,23 @@
 			text-align: center
 		}
 
+		.bee-row-10 .bee-col-1 .bee-block-2,
+		.bee-row-7 .bee-col-1 .bee-block-2,
+		.bee-row-9 .bee-col-2 .bee-block-3 a {
+			color: #555555;
+			direction: ltr;
+			font-family: Montserrat, "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+			font-weight: 500;
+			letter-spacing: 0
+		}
+
+		.bee-row-10 .bee-col-1 .bee-block-2,
+		.bee-row-7 .bee-col-1 .bee-block-2 {
+			font-size: 17px;
+			line-height: 120%;
+			text-align: center
+		}
+
 		.bee-row-9 .bee-col-2 .bee-block-3 a:hover {
 			background-color: #162d6d !important;
 			border-bottom: 1px solid #162d6d !important;
@@ -604,26 +602,32 @@
 			border-radius: 8px;
 			border-right: 1px solid #555555;
 			border-top: 1px solid #555555;
-			color: #555555;
-			direction: ltr;
-			font-family: Montserrat, "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
 			font-size: 13px;
-			font-weight: 500;
-			letter-spacing: 0;
 			line-height: 200%;
 			padding: 5px 20px;
 			width: auto
 		}
 
 		@media (max-width:768px) {
+			.bee-row-1 .bee-col-1 .bee-block-4 {
+				padding: 10px 30px !important;
+				text-align: left !important;
+				font-size: 20px !important
+			}
+
+			.bee-row-1 .bee-col-2 .bee-block-4 {
+				height: 30px !important
+			}
+
 			.bee-row-1 .bee-col-2 .bee-block-2 {
 				padding: 0 30px 5px !important;
 				text-align: center !important;
 				font-size: 13px !important
 			}
 
-			.bee-row-1 .bee-col-2 .bee-block-4 {
-				height: 30px !important
+			.bee-row-1 .bee-col-2 .bee-block-3 {
+				padding: 0 !important;
+				text-align: center !important
 			}
 
 			.bee-row-2 .bee-col-1 .bee-block-1,
@@ -639,17 +643,8 @@
 				padding: 5px 30px 20px !important
 			}
 
-			.bee-row-6 .bee-col-1 .bee-block-1 {
-				padding: 40px 0 5px
-			}
-
 			.bee-row-6 .bee-col-1 .bee-block-2 {
 				padding: 5px 0 20px !important
-			}
-
-			.bee-row-7 .bee-col-1 .bee-block-2 {
-				padding: 5px 30px 0 !important;
-				font-size: 15px !important
 			}
 
 			.bee-row-7 .bee-col-1 .bee-block-1 {
@@ -661,8 +656,12 @@
 				font-size: 22px
 			}
 
-			.bee-row-10 .bee-col-1 .bee-block-2 {
-				padding: 5px 30px 30px !important;
+			.bee-row-6 .bee-col-1 .bee-block-1 {
+				padding: 40px 0 5px
+			}
+
+			.bee-row-7 .bee-col-1 .bee-block-2 {
+				padding: 5px 30px 0 !important;
 				font-size: 15px !important
 			}
 
@@ -676,6 +675,11 @@
 
 			.bee-row-10 .bee-col-1 .bee-block-1 {
 				padding: 0 30px 7px
+			}
+
+			.bee-row-10 .bee-col-1 .bee-block-2 {
+				padding: 5px 30px 30px !important;
+				font-size: 15px !important
 			}
 		}
 	</style>
@@ -691,10 +695,10 @@
 				}
 			}
 		}
-	</script><script bis_use="true" type="text/javascript" charset="utf-8" data-bis-config="[&quot;facebook.com/&quot;,&quot;twitter.com/&quot;,&quot;youtube-nocookie.com/embed/&quot;,&quot;//vk.com/&quot;,&quot;//www.vk.com/&quot;,&quot;linkedin.com/&quot;,&quot;//www.linkedin.com/&quot;,&quot;//instagram.com/&quot;,&quot;//www.instagram.com/&quot;,&quot;//www.google.com/recaptcha/api2/&quot;,&quot;//hangouts.google.com/webchat/&quot;,&quot;//www.google.com/calendar/&quot;,&quot;//www.google.com/maps/embed&quot;,&quot;spotify.com/&quot;,&quot;soundcloud.com/&quot;,&quot;//player.vimeo.com/&quot;,&quot;//disqus.com/&quot;,&quot;//tgwidget.com/&quot;,&quot;//js.driftt.com/&quot;,&quot;friends2follow.com&quot;,&quot;/widget&quot;,&quot;login&quot;,&quot;//video.bigmir.net/&quot;,&quot;blogger.com&quot;,&quot;//smartlock.google.com/&quot;,&quot;//keep.google.com/&quot;,&quot;/web.tolstoycomments.com/&quot;,&quot;moz-extension://&quot;,&quot;chrome-extension://&quot;,&quot;/auth/&quot;,&quot;//analytics.google.com/&quot;,&quot;adclarity.com&quot;,&quot;paddle.com/checkout&quot;,&quot;hcaptcha.com&quot;,&quot;recaptcha.net&quot;,&quot;2captcha.com&quot;,&quot;accounts.google.com&quot;,&quot;www.google.com/shopping/customerreviews&quot;,&quot;buy.tinypass.com&quot;,&quot;gstatic.com&quot;,&quot;secureir.ebaystatic.com&quot;,&quot;docs.google.com&quot;,&quot;contacts.google.com&quot;,&quot;github.com&quot;,&quot;mail.google.com&quot;,&quot;chat.google.com&quot;,&quot;audio.xpleer.com&quot;,&quot;keepa.com&quot;,&quot;static.xx.fbcdn.net&quot;,&quot;sas.selleramp.com&quot;,&quot;1plus1.video&quot;,&quot;console.googletagservices.com&quot;,&quot;//lnkd.demdex.net/&quot;,&quot;//radar.cedexis.com/&quot;,&quot;//li.protechts.net/&quot;,&quot;challenges.cloudflare.com/&quot;,&quot;ogs.google.com&quot;]" src="chrome-extension://eppiocemhmnlbhjplcgkofciiegomcon/executors/traffic.js"></script>
-</head>
+	</script>
+<script bis_use="true" type="text/javascript" charset="utf-8" data-bis-config="[&quot;facebook.com/&quot;,&quot;twitter.com/&quot;,&quot;youtube-nocookie.com/embed/&quot;,&quot;//vk.com/&quot;,&quot;//www.vk.com/&quot;,&quot;linkedin.com/&quot;,&quot;//www.linkedin.com/&quot;,&quot;//instagram.com/&quot;,&quot;//www.instagram.com/&quot;,&quot;//www.google.com/recaptcha/api2/&quot;,&quot;//hangouts.google.com/webchat/&quot;,&quot;//www.google.com/calendar/&quot;,&quot;//www.google.com/maps/embed&quot;,&quot;spotify.com/&quot;,&quot;soundcloud.com/&quot;,&quot;//player.vimeo.com/&quot;,&quot;//disqus.com/&quot;,&quot;//tgwidget.com/&quot;,&quot;//js.driftt.com/&quot;,&quot;friends2follow.com&quot;,&quot;/widget&quot;,&quot;login&quot;,&quot;//video.bigmir.net/&quot;,&quot;blogger.com&quot;,&quot;//smartlock.google.com/&quot;,&quot;//keep.google.com/&quot;,&quot;/web.tolstoycomments.com/&quot;,&quot;moz-extension://&quot;,&quot;chrome-extension://&quot;,&quot;/auth/&quot;,&quot;//analytics.google.com/&quot;,&quot;adclarity.com&quot;,&quot;paddle.com/checkout&quot;,&quot;hcaptcha.com&quot;,&quot;recaptcha.net&quot;,&quot;2captcha.com&quot;,&quot;accounts.google.com&quot;,&quot;www.google.com/shopping/customerreviews&quot;,&quot;buy.tinypass.com&quot;,&quot;gstatic.com&quot;,&quot;secureir.ebaystatic.com&quot;,&quot;docs.google.com&quot;,&quot;contacts.google.com&quot;,&quot;github.com&quot;,&quot;mail.google.com&quot;,&quot;chat.google.com&quot;,&quot;audio.xpleer.com&quot;,&quot;keepa.com&quot;,&quot;static.xx.fbcdn.net&quot;,&quot;sas.selleramp.com&quot;,&quot;1plus1.video&quot;,&quot;console.googletagservices.com&quot;,&quot;//lnkd.demdex.net/&quot;,&quot;//radar.cedexis.com/&quot;,&quot;//li.protechts.net/&quot;,&quot;challenges.cloudflare.com/&quot;,&quot;ogs.google.com&quot;]" src="chrome-extension://eppiocemhmnlbhjplcgkofciiegomcon/executors/traffic.js"></script></head>
 
-<body __processed_03654aab-cef1-4cb6-b05c-d2724af17df4__="true" bis_register="W3sibWFzdGVyIjp0cnVlLCJleHRlbnNpb25JZCI6ImVwcGlvY2VtaG1ubGJoanBsY2drb2ZjaWllZ29tY29uIiwiYWRibG9ja2VyU3RhdHVzIjp7IkRJU1BMQVkiOiJlbmFibGVkIiwiRkFDRUJPT0siOiJlbmFibGVkIiwiVFdJVFRFUiI6ImVuYWJsZWQiLCJSRURESVQiOiJlbmFibGVkIiwiUElOVEVSRVNUIjoiZW5hYmxlZCIsIklOU1RBR1JBTSI6ImVuYWJsZWQiLCJMSU5LRURJTiI6ImVuYWJsZWQiLCJDT05GSUciOiJkaXNhYmxlZCJ9LCJ2ZXJzaW9uIjoiMi4wLjIyIiwic2NvcmUiOjIwMDIyMH1d">
+<body __processed_2cbdcc61-01ec-4d8d-a54b-e05330d28213__="true" bis_register="W3sibWFzdGVyIjp0cnVlLCJleHRlbnNpb25JZCI6ImVwcGlvY2VtaG1ubGJoanBsY2drb2ZjaWllZ29tY29uIiwiYWRibG9ja2VyU3RhdHVzIjp7IkRJU1BMQVkiOiJlbmFibGVkIiwiRkFDRUJPT0siOiJlbmFibGVkIiwiVFdJVFRFUiI6ImVuYWJsZWQiLCJSRURESVQiOiJlbmFibGVkIiwiUElOVEVSRVNUIjoiZW5hYmxlZCIsIklOU1RBR1JBTSI6ImVuYWJsZWQiLCJMSU5LRURJTiI6ImVuYWJsZWQiLCJDT05GSUciOiJkaXNhYmxlZCJ9LCJ2ZXJzaW9uIjoiMi4wLjIyIiwic2NvcmUiOjIwMDIyMH1d">
 	<div class="bee-page-container" bis_skin_checked="1">
 		<div class="bee-row bee-row-1" bis_skin_checked="1">
 			<div class="bee-row-content" bis_skin_checked="1">
@@ -871,63 +875,77 @@
 						<h2><span class="tinyMce-placeholder">Ofertas del mes!</span> </h2>
 					</div>
 					<div class="bee-block bee-block-2 bee-paragraph" bis_skin_checked="1">
-						<p>Apúntate en nuestros destinos con ofertas alrededor del mundo</p>
+						<p>Disfruta de nuestra variedad de ofertas y destinos en todo el mundo</p>
 					</div>
 					<div class="bee-block bee-block-3 bee-html-block" bis_skin_checked="1">
 						<!-- Google Fonts Import -->
 						<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&amp;display=swap" rel="stylesheet">
 						<style>
-							.promo-container {
-								width: 300px;
+							.promo-item {
 								font-family: 'Montserrat', sans-serif;
+								max-width: 350px;
+								width: 100%;
 								display: flex;
 								flex-direction: column;
 								align-items: center;
+								border-radius: 10px;
+								overflow: hidden;
+							}
+
+							.promo-image-wrapper {
+								width: 100%;
+								height: auto;
+								overflow: hidden;
+								border-radius: 10px;
+							}
+
+							.promo-image-wrapper img {
+								width: 100%;
+								height: auto;
+								/* Cambiado a auto para conservar proporción original */
+								object-fit: cover;
+								display: block;
+								border-radius: 10px;
+								cursor: pointer;
+							}
+
+							.promo-button {
+								display: block;
+								margin-top: 20px;
+								background-color: #159e36;
+								color: white;
+								text-align: center;
+								text-decoration: none;
+								font-weight: 600;
+								font-size: 15px;
+								padding: 10px 0;
+								width: 80%;
+								border-radius: 30px;
 							}
 
 							@media (max-width: 500px) {
-								.promo-container {
-									width: 350px;
-								}
-							}
-
-							@media (max-width: 499px) {
-								.promo-container {
+								.promo-item {
+									max-width: 350px;
 									width: 100%;
 								}
 							}
 
-							.promo-image {
-								width: 100%;
-								aspect-ratio: 4 / 5;
-								object-fit: cover;
-								border-radius: 10px;
-								display: block;
-							}
-
-							.boton-reserva {
-								display: inline-block;
-								background-color: #159e36;
-								color: white;
-								padding: 10px 20px;
-								border-radius: 30px;
-								text-decoration: none;
-								font-weight: 600;
-								font-size: 15px;
-								text-align: center;
-								margin-top: 20px;
-								width: 80%;
+							@media (max-width: 499px) {
+								.promo-item {
+									width: 100%;
+								}
 							}
 						</style>
-						<div class="promo-container" bis_skin_checked="1">
-    <a href="https://grupojeza.com/ofertas/plan-isla-margarita-express.html" bis_skin_checked="1" bis_size="{&quot;x&quot;:30,&quot;y&quot;:2555,&quot;w&quot;:316,&quot;h&quot;:396,&quot;abs_x&quot;:30,&quot;abs_y&quot;:2555}">
-        <img alt="Margarita Express" class="promo-image" src="https://static.grupojeza.com/ofertas/MARGARITA%20EXPRESS%20ABRIL%20EUROS%20WEB.jpg" bis_size="{&quot;x&quot;:30,&quot;y&quot;:2555,&quot;w&quot;:316,&quot;h&quot;:396,&quot;abs_x&quot;:30,&quot;abs_y&quot;:2555}" bis_id="bn_0z0f1wer9esqf2lm6xr92e">
-    </a>
-    <a class="boton-reserva" href="https://grupojeza.com/ofertas/plan-isla-margarita-express.html" bis_skin_checked="1">
-        Más información
-    </a>
-</div>
-
+						<div class="promo-item" bis_skin_checked="1">
+							<div class="promo-image-wrapper" bis_skin_checked="1">
+								<a href="https://grupojeza.com/ofertas/plan-isla-margarita-express.html" bis_skin_checked="1" bis_size="{&quot;x&quot;:50,&quot;y&quot;:1630,&quot;w&quot;:350,&quot;h&quot;:373,&quot;abs_x&quot;:50,&quot;abs_y&quot;:1630}">
+									<img alt="Plan Isla Margarita Express" src="https://static.grupojeza.com/ofertas/MARGARITA%20EXPRESS%20ABRIL%20EUROS%20WEB.jpg" bis_size="{&quot;x&quot;:50,&quot;y&quot;:1630,&quot;w&quot;:350,&quot;h&quot;:373,&quot;abs_x&quot;:50,&quot;abs_y&quot;:1630}" bis_id="bn_ngob3ipphtirr6z92p4a9j">
+								</a>
+							</div>
+							<a class="promo-button" href="https://grupojeza.com/ofertas/plan-isla-margarita-express.html" bis_skin_checked="1">
+								Reservar ahora
+							</a>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -3408,7 +3426,7 @@
 								}
 							</style>
 							<div class="gallery-wrapper" bis_skin_checked="1">
-								<div class="gallery-container" id="gallery" bis_skin_checked="1" style="transform: translateX(0px);">
+								<div class="gallery-container" id="gallery" bis_skin_checked="1">
 									<!-- 8 elementos con sombra y título -->
 									<div class="gallery-item" bis_skin_checked="1">
 										<img alt="item" src="https://iili.io/30QwkS2.jpg">
