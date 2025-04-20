@@ -13,7 +13,7 @@
 <!-- Favicon -->
 <link rel="icon" href="https://static.grupojeza.com/branding/favicon.png" type="image/png">
 
-	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900" rel="stylesheet" type="text/css">
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900" rel="stylesheet" type="text/css">
 	<style>
 		.bee-row,
 		.bee-row-content {
@@ -303,7 +303,7 @@
 		}
 
 		.bee-row-1 .bee-col-2 .bee-block-1,
-		.bee-row-1 .bee-col-2 .bee-block-2 div,
+		.bee-row-1 .bee-col-2 .bee-block-2 a,
 		.bee-row-2 .bee-col-2 .bee-block-1 h1,
 		.bee-row-2 .bee-col-2 .bee-block-2,
 		.bee-row-2 .bee-col-2 .bee-block-6 a,
@@ -326,7 +326,7 @@
 			margin-bottom: 16px
 		}
 
-		.bee-row-1 .bee-col-2 .bee-block-2 div {
+		.bee-row-1 .bee-col-2 .bee-block-2 a {
 			background-color: #194c94;
 			border-bottom: 0 solid #ffffff;
 			border-left: 0 solid #ffffff;
@@ -340,6 +340,15 @@
 			line-height: 200%;
 			padding: 5px 20px;
 			width: auto
+		}
+
+		.bee-row-2 .bee-col-2 .bee-block-1 h1 {
+			color: #3b3a3a;
+			font-size: 30px;
+			font-weight: 700;
+			letter-spacing: normal;
+			line-height: 120%;
+			text-align: left
 		}
 
 		.bee-row-2 .bee-col-2 .bee-block-2,
@@ -366,15 +375,6 @@
 		.bee-row-5 .bee-col-2 .bee-block-2 p:not(:last-child),
 		.bee-row-5 .bee-col-3 .bee-block-2 p:not(:last-child) {
 			margin-bottom: 0
-		}
-
-		.bee-row-2 .bee-col-2 .bee-block-1 h1 {
-			color: #3b3a3a;
-			font-size: 30px;
-			font-weight: 700;
-			letter-spacing: normal;
-			line-height: 120%;
-			text-align: left
 		}
 
 		.bee-row-2 .bee-col-2 .bee-block-6 a {
@@ -436,6 +436,22 @@
 			color: #ffffff
 		}
 
+		.bee-row-6 .bee-col-1 .bee-block-1 .bee-icon-image {
+			padding: 5px 6px 5px 5px
+		}
+
+		.bee-row-6 .bee-col-1 .bee-block-1 .bee-icon:not(.bee-icon-first) .bee-content {
+			margin-left: 0
+		}
+
+		.bee-row-6 .bee-col-1 .bee-block-1 .bee-icon::not(.bee-icon-last) .bee-content {
+			margin-right: 0
+		}
+
+		.bee-row-6 .bee-col-1 .bee-block-1 .bee-icon-label a {
+			color: #1e0e4b
+		}
+
 		.bee-row-5 .bee-col-3 .bee-block-2 {
 			color: #ffffff;
 			direction: ltr;
@@ -491,6 +507,11 @@
 				margin-bottom: 25px !important
 			}
 
+			.bee-row-1 .bee-col-1 .bee-block-1 img {
+				float: left !important;
+				margin: auto !important
+			}
+
 			.bee-row-1 .bee-col-2 .bee-block-1 {
 				padding: 5px 0 !important;
 				text-align: left !important;
@@ -512,21 +533,16 @@
 				margin: 0 auto !important
 			}
 
-			.bee-row-1 .bee-col-1 .bee-block-1 img {
-				float: left !important;
-				margin: auto !important
-			}
-
-			.bee-row-2 .bee-col-2 .bee-block-2 {
-				padding: 0 0 20px !important
-			}
-
 			.bee-row-2 .bee-col-2 .bee-block-1 {
 				padding: 0 0 15px
 			}
 
 			.bee-row-2 .bee-col-2 .bee-block-1 h1 {
 				font-size: 25px
+			}
+
+			.bee-row-2 .bee-col-2 .bee-block-2 {
+				padding: 0 0 20px !important
 			}
 
 			.bee-row-2 .bee-col-2 .bee-block-4 {
@@ -560,30 +576,14 @@
 				padding: 0 0 25px !important
 			}
 
+			.bee-row-5 .bee-col-2 .bee-block-2 {
+				padding: 0 0 35px !important
+			}
+
 			.bee-row-5 .bee-col-3 .bee-block-2 {
 				text-align: center !important;
 				font-size: 11px !important
 			}
-
-			.bee-row-5 .bee-col-2 .bee-block-2 {
-				padding: 0 0 35px !important
-			}
-		}
-
-		.bee-row-6 .bee-col-1 .bee-block-1 .bee-icon-image {
-			padding: 5px 6px 5px 5px
-		}
-
-		.bee-row-6 .bee-col-1 .bee-block-1 .bee-icon:not(.bee-icon-first) .bee-content {
-			margin-left: 0
-		}
-
-		.bee-row-6 .bee-col-1 .bee-block-1 .bee-icon::not(.bee-icon-last) .bee-content {
-			margin-right: 0
-		}
-
-		.bee-row-6 .bee-col-1 .bee-block-1 .bee-icon-label a {
-			color: #1e0e4b
 		}
 	</style>
 	<script async="" defer="" src="https://www.google.com/recaptcha/api.js"></script>
@@ -598,10 +598,10 @@
 				}
 			}
 		}
-	</script>
-<script bis_use="true" type="text/javascript" charset="utf-8" data-bis-config="[&quot;facebook.com/&quot;,&quot;twitter.com/&quot;,&quot;youtube-nocookie.com/embed/&quot;,&quot;//vk.com/&quot;,&quot;//www.vk.com/&quot;,&quot;linkedin.com/&quot;,&quot;//www.linkedin.com/&quot;,&quot;//instagram.com/&quot;,&quot;//www.instagram.com/&quot;,&quot;//www.google.com/recaptcha/api2/&quot;,&quot;//hangouts.google.com/webchat/&quot;,&quot;//www.google.com/calendar/&quot;,&quot;//www.google.com/maps/embed&quot;,&quot;spotify.com/&quot;,&quot;soundcloud.com/&quot;,&quot;//player.vimeo.com/&quot;,&quot;//disqus.com/&quot;,&quot;//tgwidget.com/&quot;,&quot;//js.driftt.com/&quot;,&quot;friends2follow.com&quot;,&quot;/widget&quot;,&quot;login&quot;,&quot;//video.bigmir.net/&quot;,&quot;blogger.com&quot;,&quot;//smartlock.google.com/&quot;,&quot;//keep.google.com/&quot;,&quot;/web.tolstoycomments.com/&quot;,&quot;moz-extension://&quot;,&quot;chrome-extension://&quot;,&quot;/auth/&quot;,&quot;//analytics.google.com/&quot;,&quot;adclarity.com&quot;,&quot;paddle.com/checkout&quot;,&quot;hcaptcha.com&quot;,&quot;recaptcha.net&quot;,&quot;2captcha.com&quot;,&quot;accounts.google.com&quot;,&quot;www.google.com/shopping/customerreviews&quot;,&quot;buy.tinypass.com&quot;,&quot;gstatic.com&quot;,&quot;secureir.ebaystatic.com&quot;,&quot;docs.google.com&quot;,&quot;contacts.google.com&quot;,&quot;github.com&quot;,&quot;mail.google.com&quot;,&quot;chat.google.com&quot;,&quot;audio.xpleer.com&quot;,&quot;keepa.com&quot;,&quot;static.xx.fbcdn.net&quot;,&quot;sas.selleramp.com&quot;,&quot;1plus1.video&quot;,&quot;console.googletagservices.com&quot;,&quot;//lnkd.demdex.net/&quot;,&quot;//radar.cedexis.com/&quot;,&quot;//li.protechts.net/&quot;,&quot;challenges.cloudflare.com/&quot;,&quot;ogs.google.com&quot;]" src="chrome-extension://eppiocemhmnlbhjplcgkofciiegomcon/executors/traffic.js"></script></head>
+	</script><script bis_use="true" type="text/javascript" charset="utf-8" data-bis-config="[&quot;facebook.com/&quot;,&quot;twitter.com/&quot;,&quot;youtube-nocookie.com/embed/&quot;,&quot;//vk.com/&quot;,&quot;//www.vk.com/&quot;,&quot;linkedin.com/&quot;,&quot;//www.linkedin.com/&quot;,&quot;//instagram.com/&quot;,&quot;//www.instagram.com/&quot;,&quot;//www.google.com/recaptcha/api2/&quot;,&quot;//hangouts.google.com/webchat/&quot;,&quot;//www.google.com/calendar/&quot;,&quot;//www.google.com/maps/embed&quot;,&quot;spotify.com/&quot;,&quot;soundcloud.com/&quot;,&quot;//player.vimeo.com/&quot;,&quot;//disqus.com/&quot;,&quot;//tgwidget.com/&quot;,&quot;//js.driftt.com/&quot;,&quot;friends2follow.com&quot;,&quot;/widget&quot;,&quot;login&quot;,&quot;//video.bigmir.net/&quot;,&quot;blogger.com&quot;,&quot;//smartlock.google.com/&quot;,&quot;//keep.google.com/&quot;,&quot;/web.tolstoycomments.com/&quot;,&quot;moz-extension://&quot;,&quot;chrome-extension://&quot;,&quot;/auth/&quot;,&quot;//analytics.google.com/&quot;,&quot;adclarity.com&quot;,&quot;paddle.com/checkout&quot;,&quot;hcaptcha.com&quot;,&quot;recaptcha.net&quot;,&quot;2captcha.com&quot;,&quot;accounts.google.com&quot;,&quot;www.google.com/shopping/customerreviews&quot;,&quot;buy.tinypass.com&quot;,&quot;gstatic.com&quot;,&quot;secureir.ebaystatic.com&quot;,&quot;docs.google.com&quot;,&quot;contacts.google.com&quot;,&quot;github.com&quot;,&quot;mail.google.com&quot;,&quot;chat.google.com&quot;,&quot;audio.xpleer.com&quot;,&quot;keepa.com&quot;,&quot;static.xx.fbcdn.net&quot;,&quot;sas.selleramp.com&quot;,&quot;1plus1.video&quot;,&quot;console.googletagservices.com&quot;,&quot;//lnkd.demdex.net/&quot;,&quot;//radar.cedexis.com/&quot;,&quot;//li.protechts.net/&quot;,&quot;challenges.cloudflare.com/&quot;,&quot;ogs.google.com&quot;]" src="chrome-extension://eppiocemhmnlbhjplcgkofciiegomcon/executors/traffic.js"></script>
+</head>
 
-<body __processed_b025f896-b347-443e-99bc-fb985237e3a3__="true" bis_register="W3sibWFzdGVyIjp0cnVlLCJleHRlbnNpb25JZCI6ImVwcGlvY2VtaG1ubGJoanBsY2drb2ZjaWllZ29tY29uIiwiYWRibG9ja2VyU3RhdHVzIjp7IkRJU1BMQVkiOiJlbmFibGVkIiwiRkFDRUJPT0siOiJlbmFibGVkIiwiVFdJVFRFUiI6ImVuYWJsZWQiLCJSRURESVQiOiJlbmFibGVkIiwiUElOVEVSRVNUIjoiZW5hYmxlZCIsIklOU1RBR1JBTSI6ImVuYWJsZWQiLCJMSU5LRURJTiI6ImVuYWJsZWQiLCJDT05GSUciOiJkaXNhYmxlZCJ9LCJ2ZXJzaW9uIjoiMi4wLjIyIiwic2NvcmUiOjIwMDIyMH1d">
+<body bis_register="W3sibWFzdGVyIjp0cnVlLCJleHRlbnNpb25JZCI6ImVwcGlvY2VtaG1ubGJoanBsY2drb2ZjaWllZ29tY29uIiwiYWRibG9ja2VyU3RhdHVzIjp7IkRJU1BMQVkiOiJlbmFibGVkIiwiRkFDRUJPT0siOiJlbmFibGVkIiwiVFdJVFRFUiI6ImVuYWJsZWQiLCJSRURESVQiOiJlbmFibGVkIiwiUElOVEVSRVNUIjoiZW5hYmxlZCIsIklOU1RBR1JBTSI6ImVuYWJsZWQiLCJMSU5LRURJTiI6ImVuYWJsZWQiLCJDT05GSUciOiJkaXNhYmxlZCJ9LCJ2ZXJzaW9uIjoiMi4wLjIyIiwic2NvcmUiOjIwMDIyMH1d" __processed_ce1bcfa6-9a13-46dc-8ece-34de8003651c__="true">
 	<div class="bee-page-container" bis_skin_checked="1">
 		<div class="bee-row bee-row-1" bis_skin_checked="1">
 			<div class="bee-row-content" bis_skin_checked="1">
@@ -612,8 +612,7 @@
 					<div class="bee-block bee-block-1 bee-paragraph" bis_skin_checked="1">
 						<p>Mayorista de Turismo &amp; Tour Operador</p>
 					</div>
-<a class="bee-button-content" href="https://grupojeza.com/" style="font-size: 13px; display: inline-block;" target="_blank"><span style="word-break: break-word; font-size: 13px; line-height: 200%; letter-spacing: normal;">Volver al Home</span></a>
-
+					<div class="bee-block bee-block-2 bee-button" bis_skin_checked="1"><a class="bee-button-content" href="https://grupojeza.com/" style="font-size: 13px; display: inline-block;" target="_blank"><span style="word-break: break-word; font-size: 13px; line-height: 200%; letter-spacing: normal;">Volver al Home</span></a></div>
 				</div>
 			</div>
 		</div>
@@ -723,13 +722,7 @@
   right: 30px;
   z-index: 1000;
 " target="_blank">
-							<img alt="WhatsApp" onmouseout="this.style.height='50px'" onmouseover="this.style.height='55px'" src="https://static.grupojeza.com/interfaz/icono-whatsapp.png" style="
-      height: 50px;
-      width: auto;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-      border-radius: 8px;
-      transition: all 0.3s ease;
-    ">
+							<img alt="WhatsApp" onmouseout="this.style.height='50px'" onmouseover="this.style.height='55px'" src="https://static.grupojeza.com/interfaz/icono-whatsapp.png" style="height: 50px; width: auto; box-shadow: rgba(0, 0, 0, 0.15) 0px 4px 12px; border-radius: 8px; transition: 0.3s;">
 						</a>
 					</div>
 				</div>
