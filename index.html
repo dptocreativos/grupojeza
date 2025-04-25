@@ -16,7 +16,7 @@
 
 
 	
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900" rel="stylesheet" type="text/css">
 	<style>
 		.bee-row,
 		.bee-row-content {
@@ -69,16 +69,8 @@
 			flex-basis: 33.3333333333%
 		}
 
-		.bee-row-content .bee-col-w5 {
-			flex-basis: 41.6666666667%
-		}
-
 		.bee-row-content .bee-col-w6 {
 			flex-basis: 50%
-		}
-
-		.bee-row-content .bee-col-w7 {
-			flex-basis: 58.3333333333%
 		}
 
 		.bee-row-content .bee-col-w12 {
@@ -123,7 +115,6 @@
 		}
 
 		.bee-row-1 .bee-col-1,
-		.bee-row-1 .bee-col-2,
 		.bee-row-11 .bee-col-1,
 		.bee-row-3 .bee-col-1,
 		.bee-row-7 .bee-col-1 {
@@ -154,13 +145,17 @@
 			text-align: left
 		}
 
-		.bee-row-1 .bee-col-2 .bee-block-2 {
+		.bee-row-1 .bee-col-2 {
 			padding-bottom: 5px;
-			padding-right: 50px
+			padding-right: 50px;
+			padding-top: 5px
 		}
 
-		.bee-row-1 .bee-col-2 .bee-block-3 {
-			padding-right: 45px;
+		.bee-row-1 .bee-col-2 .bee-block-2 {
+			padding-bottom: 5px
+		}
+
+		.bee-row-1 .bee-col-2 .bee-block-4 {
 			text-align: right
 		}
 
@@ -334,15 +329,6 @@
 			text-align: center
 		}
 
-		.bee-row-1 .bee-col-1 .bee-block-3 h2,
-		.bee-row-1 .bee-col-1 .bee-block-4 {
-			color: #ffffff;
-			direction: ltr;
-			font-family: Montserrat, "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
-			text-align: left;
-			line-height: 120%
-		}
-
 		.bee-row-9 .bee-col-4 .bee-block-2 {
 			padding-bottom: 26px;
 			padding-left: 20px;
@@ -364,16 +350,15 @@
 			background-repeat: no-repeat
 		}
 
-		.bee-row-1 .bee-col-1 .bee-block-3 h2 {
-			font-size: 36px;
-			font-weight: 700;
-			letter-spacing: normal
-		}
-
 		.bee-row-1 .bee-col-1 .bee-block-4 {
+			color: #ffffff;
+			direction: ltr;
+			font-family: Montserrat, "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
 			font-size: 21px;
 			font-weight: 400;
-			letter-spacing: 0
+			letter-spacing: 0;
+			line-height: 120%;
+			text-align: left
 		}
 
 		.bee-row-1 .bee-col-1 .bee-block-4 a,
@@ -385,12 +370,12 @@
 			color: #7747FF
 		}
 
+		.bee-row-1 .bee-col-1 .bee-block-3 h2,
 		.bee-row-1 .bee-col-1 .bee-block-5 a,
 		.bee-row-1 .bee-col-2 .bee-block-2 {
 			color: #ffffff;
 			direction: ltr;
-			font-family: Montserrat, "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
-			letter-spacing: 0
+			font-family: Montserrat, "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif
 		}
 
 		.bee-row-1 .bee-col-1 .bee-block-4 p:not(:last-child),
@@ -401,15 +386,34 @@
 			margin-bottom: 0
 		}
 
+		.bee-row-1 .bee-col-1 .bee-block-3 h2 {
+			font-size: 36px;
+			font-weight: 700;
+			letter-spacing: normal;
+			line-height: 120%;
+			text-align: left
+		}
+
 		.bee-row-1 .bee-col-2 .bee-block-2 {
 			font-size: 14px;
 			font-weight: 500;
+			letter-spacing: 0;
 			line-height: 120%;
 			text-align: right
 		}
 
 		.bee-row-1 .bee-col-2 .bee-block-2 p:not(:last-child) {
 			margin-bottom: 16px
+		}
+
+		.bee-row-10 .bee-col-1 .bee-block-2,
+		.bee-row-3 .bee-col-1 .bee-block-2,
+		.bee-row-6 .bee-col-1 .bee-block-2,
+		.bee-row-7 .bee-col-1 .bee-block-2 {
+			color: #555555;
+			font-size: 17px;
+			font-weight: 500;
+			letter-spacing: 0
 		}
 
 		@media (max-width:768px) {
@@ -421,6 +425,15 @@
 				display: block
 			}
 
+			.bee-row-1 .bee-row-content {
+				padding-left: 30px !important;
+				padding-right: 30px !important
+			}
+
+			.bee-row-1 .bee-col-2 {
+				padding: 5px 0 !important
+			}
+
 			.bee-row-4 .bee-row-content {
 				padding: 0 30px 30px !important
 			}
@@ -429,7 +442,6 @@
 				padding: 0 30px 3px !important
 			}
 
-			.bee-row-1 .bee-col-1 .bee-block-2,
 			.bee-row-6 .bee-col-1,
 			.bee-row-8 .bee-row-content {
 				padding: 0 30px !important
@@ -458,13 +470,23 @@
 				margin-bottom: 20px !important
 			}
 
+			.bee-row-1 .bee-col-1 .bee-block-2 {
+				padding: 0 !important
+			}
+
 			.bee-row-1 .bee-col-1 .bee-block-2 img {
 				float: left !important;
 				margin: auto !important
 			}
 
+			.bee-row-1 .bee-col-1 .bee-block-4 {
+				padding: 10px 0 !important;
+				text-align: left !important;
+				font-size: 20px !important
+			}
+
 			.bee-row-1 .bee-col-1 .bee-block-3 {
-				padding: 20px 30px 10px;
+				padding: 20px 0 10px;
 				text-align: left
 			}
 
@@ -477,25 +499,23 @@
 				height: 40px !important
 			}
 
-			.bee-row-1 .bee-col-1 .bee-block-4 {
-				padding: 10px 30px !important;
-				text-align: left !important;
-				font-size: 20px !important
-			}
-
-			.bee-row-1 .bee-col-2 .bee-block-3 {
+			.bee-row-1 .bee-col-2 .bee-block-4 {
 				padding: 0 !important;
 				text-align: center !important
 			}
 
 			.bee-row-1 .bee-col-2 .bee-block-2 {
-				padding: 0 30px 5px !important;
+				padding: 0 0 5px !important;
 				text-align: center !important;
 				font-size: 13px !important
 			}
 
+			.bee-row-1 .bee-col-2 .bee-block-5 {
+				height: 30px !important
+			}
+
 			.bee-row-1 .bee-col-1 .bee-block-5 {
-				padding: 10px 30px !important
+				padding: 10px 0 !important
 			}
 
 			.bee-row-1 .bee-col-1 .bee-block-5 .bee-button-content {
@@ -511,8 +531,8 @@
 				line-height: auto !important
 			}
 
-			.bee-row-1 .bee-col-2 .bee-block-4 {
-				height: 30px !important
+			.bee-row-2 .bee-col-1 .bee-block-1 {
+				height: 25px !important
 			}
 		}
 
@@ -530,62 +550,40 @@
 			border-radius: 8px;
 			font-size: 16px;
 			font-weight: 600;
+			letter-spacing: 0;
 			line-height: 200%;
 			padding: 5px 20px;
 			width: auto
 		}
 
+		.bee-row-10 .bee-col-1 .bee-block-1 h2,
 		.bee-row-3 .bee-col-1 .bee-block-1 h2,
-		.bee-row-6 .bee-col-1 .bee-block-1 h2 {
+		.bee-row-6 .bee-col-1 .bee-block-1 h2,
+		.bee-row-7 .bee-col-1 .bee-block-1 h2 {
 			color: #3b3a3a;
-			direction: ltr;
-			font-family: Montserrat, "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
 			font-size: 28px;
 			font-weight: 700;
-			letter-spacing: normal;
-			line-height: 120%;
-			text-align: left
+			letter-spacing: normal
 		}
 
+		.bee-row-3 .bee-col-1 .bee-block-1 h2,
 		.bee-row-3 .bee-col-1 .bee-block-2,
+		.bee-row-6 .bee-col-1 .bee-block-1 h2,
 		.bee-row-6 .bee-col-1 .bee-block-2 {
-			color: #555555;
 			direction: ltr;
 			font-family: Montserrat, "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
-			font-size: 17px;
-			font-weight: 500;
-			letter-spacing: 0;
 			line-height: 120%;
 			text-align: left
 		}
 
 		.bee-row-10 .bee-col-1 .bee-block-1 h2,
-		.bee-row-7 .bee-col-1 .bee-block-1 h2 {
-			color: #3b3a3a;
-			direction: ltr;
-			font-family: Montserrat, "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
-			font-size: 28px;
-			font-weight: 700;
-			letter-spacing: normal;
-			line-height: 120%;
-			text-align: center
-		}
-
 		.bee-row-10 .bee-col-1 .bee-block-2,
-		.bee-row-7 .bee-col-1 .bee-block-2,
-		.bee-row-9 .bee-col-2 .bee-block-3 a {
-			color: #555555;
+		.bee-row-7 .bee-col-1 .bee-block-1 h2,
+		.bee-row-7 .bee-col-1 .bee-block-2 {
+			line-height: 120%;
+			text-align: center;
 			direction: ltr;
 			font-family: Montserrat, "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif
-		}
-
-		.bee-row-10 .bee-col-1 .bee-block-2,
-		.bee-row-7 .bee-col-1 .bee-block-2 {
-			font-size: 17px;
-			font-weight: 500;
-			letter-spacing: 0;
-			line-height: 120%;
-			text-align: center
 		}
 
 		.bee-row-8 .bee-col-1 .bee-block-1 h3,
@@ -606,61 +604,6 @@
 			text-align: center
 		}
 
-		@media (max-width:768px) {
-
-			.bee-row-2 .bee-col-1 .bee-block-1,
-			.bee-row-2 .bee-col-1 .bee-block-3 {
-				height: 25px !important
-			}
-
-			.bee-row-3 .bee-col-1 .bee-block-1 {
-				padding: 40px 30px 5px
-			}
-
-			.bee-row-3 .bee-col-1 .bee-block-2 {
-				padding: 5px 30px 20px !important
-			}
-
-			.bee-row-6 .bee-col-1 .bee-block-2 {
-				padding: 5px 0 20px !important
-			}
-
-			.bee-row-7 .bee-col-1 .bee-block-1 {
-				padding: 40px 30px 7px
-			}
-
-			.bee-row-10 .bee-col-1 .bee-block-1 h2,
-			.bee-row-7 .bee-col-1 .bee-block-1 h2 {
-				font-size: 22px
-			}
-
-			.bee-row-6 .bee-col-1 .bee-block-1 {
-				padding: 40px 0 5px
-			}
-
-			.bee-row-7 .bee-col-1 .bee-block-2 {
-				padding: 5px 30px 0 !important;
-				font-size: 15px !important
-			}
-
-			.bee-row-10 .bee-col-1 .bee-block-1 {
-				padding: 0 30px 7px
-			}
-
-			.bee-row-10 .bee-col-1 .bee-block-2 {
-				padding: 5px 30px 30px !important;
-				font-size: 15px !important
-			}
-
-			.bee-row-9 .bee-col-2 .bee-block-3 {
-				padding: 10px 20px 0 !important
-			}
-
-			.bee-row-9 .bee-col-2 .bee-block-3 .bee-button-content {
-				text-align: center !important
-			}
-		}
-
 		.bee-row-9 .bee-col-2 .bee-block-3 a:hover {
 			background-color: #162d6d !important;
 			border-bottom: 1px solid #162d6d !important;
@@ -676,12 +619,68 @@
 			border-radius: 8px;
 			border-right: 1px solid #555555;
 			border-top: 1px solid #555555;
+			color: #555555;
+			direction: ltr;
+			font-family: Montserrat, "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
 			font-size: 13px;
 			font-weight: 500;
 			letter-spacing: 0;
 			line-height: 200%;
 			padding: 5px 20px;
 			width: auto
+		}
+
+		@media (max-width:768px) {
+			.bee-row-2 .bee-col-1 .bee-block-3 {
+				height: 25px !important
+			}
+
+			.bee-row-3 .bee-col-1 .bee-block-1 {
+				padding: 40px 30px 5px
+			}
+
+			.bee-row-3 .bee-col-1 .bee-block-2 {
+				padding: 5px 30px 20px !important
+			}
+
+			.bee-row-6 .bee-col-1 .bee-block-1 {
+				padding: 40px 0 5px
+			}
+
+			.bee-row-6 .bee-col-1 .bee-block-2 {
+				padding: 5px 0 20px !important
+			}
+
+			.bee-row-7 .bee-col-1 .bee-block-2 {
+				padding: 5px 30px 0 !important;
+				font-size: 15px !important
+			}
+
+			.bee-row-7 .bee-col-1 .bee-block-1 {
+				padding: 40px 30px 7px
+			}
+
+			.bee-row-10 .bee-col-1 .bee-block-1 h2,
+			.bee-row-7 .bee-col-1 .bee-block-1 h2 {
+				font-size: 22px
+			}
+
+			.bee-row-9 .bee-col-2 .bee-block-3 {
+				padding: 10px 20px 0 !important
+			}
+
+			.bee-row-9 .bee-col-2 .bee-block-3 .bee-button-content {
+				text-align: center !important
+			}
+
+			.bee-row-10 .bee-col-1 .bee-block-2 {
+				padding: 5px 30px 30px !important;
+				font-size: 15px !important
+			}
+
+			.bee-row-10 .bee-col-1 .bee-block-1 {
+				padding: 0 30px 7px
+			}
 		}
 	</style>
 	<script async="" defer="" src="https://www.google.com/recaptcha/api.js"></script>
@@ -696,20 +695,20 @@
 				}
 			}
 		}
-	</script>
-<script bis_use="true" type="text/javascript" charset="utf-8" data-bis-config="[&quot;facebook.com/&quot;,&quot;twitter.com/&quot;,&quot;youtube-nocookie.com/embed/&quot;,&quot;//vk.com/&quot;,&quot;//www.vk.com/&quot;,&quot;linkedin.com/&quot;,&quot;//www.linkedin.com/&quot;,&quot;//instagram.com/&quot;,&quot;//www.instagram.com/&quot;,&quot;//www.google.com/recaptcha/api2/&quot;,&quot;//hangouts.google.com/webchat/&quot;,&quot;//www.google.com/calendar/&quot;,&quot;//www.google.com/maps/embed&quot;,&quot;spotify.com/&quot;,&quot;soundcloud.com/&quot;,&quot;//player.vimeo.com/&quot;,&quot;//disqus.com/&quot;,&quot;//tgwidget.com/&quot;,&quot;//js.driftt.com/&quot;,&quot;friends2follow.com&quot;,&quot;/widget&quot;,&quot;login&quot;,&quot;//video.bigmir.net/&quot;,&quot;blogger.com&quot;,&quot;//smartlock.google.com/&quot;,&quot;//keep.google.com/&quot;,&quot;/web.tolstoycomments.com/&quot;,&quot;moz-extension://&quot;,&quot;chrome-extension://&quot;,&quot;/auth/&quot;,&quot;//analytics.google.com/&quot;,&quot;adclarity.com&quot;,&quot;paddle.com/checkout&quot;,&quot;hcaptcha.com&quot;,&quot;recaptcha.net&quot;,&quot;2captcha.com&quot;,&quot;accounts.google.com&quot;,&quot;www.google.com/shopping/customerreviews&quot;,&quot;buy.tinypass.com&quot;,&quot;gstatic.com&quot;,&quot;secureir.ebaystatic.com&quot;,&quot;docs.google.com&quot;,&quot;contacts.google.com&quot;,&quot;github.com&quot;,&quot;mail.google.com&quot;,&quot;chat.google.com&quot;,&quot;audio.xpleer.com&quot;,&quot;keepa.com&quot;,&quot;static.xx.fbcdn.net&quot;,&quot;sas.selleramp.com&quot;,&quot;1plus1.video&quot;,&quot;console.googletagservices.com&quot;,&quot;//lnkd.demdex.net/&quot;,&quot;//radar.cedexis.com/&quot;,&quot;//li.protechts.net/&quot;,&quot;challenges.cloudflare.com/&quot;,&quot;ogs.google.com&quot;]" src="chrome-extension://eppiocemhmnlbhjplcgkofciiegomcon/executors/traffic.js"></script></head>
+	</script><script bis_use="true" type="text/javascript" charset="utf-8" data-bis-config="[&quot;facebook.com/&quot;,&quot;twitter.com/&quot;,&quot;youtube-nocookie.com/embed/&quot;,&quot;//vk.com/&quot;,&quot;//www.vk.com/&quot;,&quot;linkedin.com/&quot;,&quot;//www.linkedin.com/&quot;,&quot;//instagram.com/&quot;,&quot;//www.instagram.com/&quot;,&quot;//www.google.com/recaptcha/api2/&quot;,&quot;//hangouts.google.com/webchat/&quot;,&quot;//www.google.com/calendar/&quot;,&quot;//www.google.com/maps/embed&quot;,&quot;spotify.com/&quot;,&quot;soundcloud.com/&quot;,&quot;//player.vimeo.com/&quot;,&quot;//disqus.com/&quot;,&quot;//tgwidget.com/&quot;,&quot;//js.driftt.com/&quot;,&quot;friends2follow.com&quot;,&quot;/widget&quot;,&quot;login&quot;,&quot;//video.bigmir.net/&quot;,&quot;blogger.com&quot;,&quot;//smartlock.google.com/&quot;,&quot;//keep.google.com/&quot;,&quot;/web.tolstoycomments.com/&quot;,&quot;moz-extension://&quot;,&quot;chrome-extension://&quot;,&quot;/auth/&quot;,&quot;//analytics.google.com/&quot;,&quot;adclarity.com&quot;,&quot;paddle.com/checkout&quot;,&quot;hcaptcha.com&quot;,&quot;recaptcha.net&quot;,&quot;2captcha.com&quot;,&quot;accounts.google.com&quot;,&quot;www.google.com/shopping/customerreviews&quot;,&quot;buy.tinypass.com&quot;,&quot;gstatic.com&quot;,&quot;secureir.ebaystatic.com&quot;,&quot;docs.google.com&quot;,&quot;contacts.google.com&quot;,&quot;github.com&quot;,&quot;mail.google.com&quot;,&quot;chat.google.com&quot;,&quot;audio.xpleer.com&quot;,&quot;keepa.com&quot;,&quot;static.xx.fbcdn.net&quot;,&quot;sas.selleramp.com&quot;,&quot;1plus1.video&quot;,&quot;console.googletagservices.com&quot;,&quot;//lnkd.demdex.net/&quot;,&quot;//radar.cedexis.com/&quot;,&quot;//li.protechts.net/&quot;,&quot;challenges.cloudflare.com/&quot;,&quot;ogs.google.com&quot;]" src="chrome-extension://eppiocemhmnlbhjplcgkofciiegomcon/executors/traffic.js"></script>
+</head>
 
-<body __processed_d838a672-ddd7-4825-a48c-9e4250e445ae__="true" bis_register="W3sibWFzdGVyIjp0cnVlLCJleHRlbnNpb25JZCI6ImVwcGlvY2VtaG1ubGJoanBsY2drb2ZjaWllZ29tY29uIiwiYWRibG9ja2VyU3RhdHVzIjp7IkRJU1BMQVkiOiJlbmFibGVkIiwiRkFDRUJPT0siOiJlbmFibGVkIiwiVFdJVFRFUiI6ImVuYWJsZWQiLCJSRURESVQiOiJlbmFibGVkIiwiUElOVEVSRVNUIjoiZW5hYmxlZCIsIklOU1RBR1JBTSI6ImVuYWJsZWQiLCJMSU5LRURJTiI6ImVuYWJsZWQiLCJDT05GSUciOiJkaXNhYmxlZCJ9LCJ2ZXJzaW9uIjoiMi4wLjIyIiwic2NvcmUiOjIwMDIyMH1d">
+<body __processed_3fc81b13-0fcc-45bd-b407-05b5f3a1b3f4__="true" bis_register="W3sibWFzdGVyIjp0cnVlLCJleHRlbnNpb25JZCI6ImVwcGlvY2VtaG1ubGJoanBsY2drb2ZjaWllZ29tY29uIiwiYWRibG9ja2VyU3RhdHVzIjp7IkRJU1BMQVkiOiJlbmFibGVkIiwiRkFDRUJPT0siOiJlbmFibGVkIiwiVFdJVFRFUiI6ImVuYWJsZWQiLCJSRURESVQiOiJlbmFibGVkIiwiUElOVEVSRVNUIjoiZW5hYmxlZCIsIklOU1RBR1JBTSI6ImVuYWJsZWQiLCJMSU5LRURJTiI6ImVuYWJsZWQiLCJDT05GSUciOiJkaXNhYmxlZCJ9LCJ2ZXJzaW9uIjoiMi4wLjIyIiwic2NvcmUiOjIwMDIyMH1d">
 	<div class="bee-page-container" bis_skin_checked="1">
 		<div class="bee-row bee-row-1" bis_skin_checked="1">
 			<div class="bee-row-content" bis_skin_checked="1">
-				<div class="bee-col bee-col-1 bee-col-w7" bis_skin_checked="1">
+				<div class="bee-col bee-col-1 bee-col-w6" bis_skin_checked="1">
 					<div class="bee-block bee-block-1 bee-spacer" bis_skin_checked="1">
 						<div class="spacer" style="height:30px;" bis_skin_checked="1"></div>
 					</div>
-					<div class="bee-block bee-block-2 bee-image" bis_skin_checked="1"><img alt="" class="bee-fixedwidth" src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/BeeProAgency/864967_849080/GRUPO%20JEZA%20BLANCO.png" style="max-width:204px;"></div>
+					<div class="bee-block bee-block-2 bee-image" bis_skin_checked="1"><img alt="" class="bee-fixedwidth" src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/BeeProAgency/864967_849080/GRUPO%20JEZA%20BLANCO.png" style="max-width:175px;"></div>
 					<div class="bee-block bee-block-3 bee-heading" bis_skin_checked="1">
-						<h2><span class="tinyMce-placeholder">Tus próximas vacaciones a un click de distancia</span> </h2>
+						<h2><span class="tinyMce-placeholder">¡Tus próximas vacaciones a un click de distancia!</span> </h2>
 					</div>
 					<div class="bee-block bee-block-4 bee-paragraph" bis_skin_checked="1">
 						<p>La tranquilidad de viajar fácil y seguro, solo con Grupo Jeza.&nbsp;</p>
@@ -719,17 +718,110 @@
 						<div class="spacer" style="height:150px;" bis_skin_checked="1"></div>
 					</div>
 				</div>
-				<div class="bee-col bee-col-2 bee-col-w5" bis_skin_checked="1">
+				<div class="bee-col bee-col-2 bee-col-w6" bis_skin_checked="1">
 					<div class="bee-block bee-block-1 bee-spacer bee-mobile_hide" bis_skin_checked="1">
 						<div class="spacer" style="height:50px;" bis_skin_checked="1"></div>
 					</div>
 					<div class="bee-block bee-block-2 bee-paragraph" bis_skin_checked="1">
 						<p>Mayorista de Turismo &amp; Tour Operador. Fundada en 2004</p>
 					</div>
-					<div class="bee-block bee-block-3 bee-social" bis_skin_checked="1">
+					<div class="bee-block bee-block-3 bee-html-block" bis_skin_checked="1">
+						<style>
+							@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+							.menu-jeza {
+								display: flex;
+								flex-wrap: wrap;
+								gap: 0px;
+								/* Espacio entre los elementos */
+								align-items: center;
+								justify-content: flex-end;
+								/* Alinea los elementos a la derecha por defecto */
+								font-family: 'Montserrat', sans-serif;
+								font-weight: 700;
+								background-color: none;
+								padding: 0;
+							}
+
+							.menu-jeza a {
+								color: #ffffff;
+								text-decoration: none;
+								display: flex;
+								align-items: center;
+								gap: 6px;
+								/* Espacio entre el icono y el texto */
+								font-size: 15px;
+								transition: color 0.3s ease;
+								padding: 4px 0;
+								/* Reducido el padding para menos espacio vertical */
+								margin-left: 15px;
+								/* Espacio de 15px a la izquierda */
+								margin-bottom: 0;
+								/* Elimina el espacio hacia abajo */
+							}
+
+							.menu-jeza a:hover {
+								color: #ffffff;
+							}
+
+							.menu-jeza img {
+								width: 15px;
+								height: 15px;
+							}
+
+							@media (max-width: 770px) {
+								.menu-jeza {
+									gap: 5px;
+									/* Reducido el espacio entre los elementos en pantallas pequeñas */
+									justify-content: center;
+									/* Centra los elementos en la pantalla */
+								}
+
+								.menu-jeza a {
+									font-size: 14px;
+									gap: 6px;
+									/* Espacio entre el icono y el texto */
+									padding: 4px 0;
+									/* Mantener el padding reducido para menos espacio vertical */
+									margin-left: 0;
+									/* Elimina el margen a la izquierda en pantallas pequeñas */
+									margin-bottom: 5px;
+									/* Menos espacio hacia abajo en pantallas pequeñas */
+								}
+
+								.menu-jeza img {
+									width: 14px;
+									height: 14px;
+								}
+							}
+						</style>
+						<nav class="menu-jeza">
+							<a href="https://grupojeza.com/#ofertas" bis_skin_checked="1">
+								<img alt="Ofertas" src="https://static.grupojeza.com/interfaz/ofertas-blanco.png">
+								Ofertas
+							</a>
+							<a href="https://wa.link/bibp48" bis_skin_checked="1">
+								<img alt="Paquetes" src="https://static.grupojeza.com/interfaz/paquetes-blanco.png">
+								Paquetes
+							</a>
+							<a href="https://wa.link/xynpvu" bis_skin_checked="1">
+								<img alt="Viajes" src="https://static.grupojeza.com/interfaz/viajes-blanco.png">
+								Viajes
+							</a>
+							<a href="https://wa.link/oswugz" bis_skin_checked="1">
+								<img alt="Hoteles" src="https://static.grupojeza.com/interfaz/hoteles-blanco.png">
+								Hoteles
+							</a>
+							<a href="http://grupojeza.com/seguro-de-viaje.html" bis_skin_checked="1">
+								<img alt="Seguros de Viaje" src="https://static.grupojeza.com/interfaz/seguro-viaje-blanco.png">
+								Seguro de Viaje
+							</a>
+						</nav>
+					</div>
+					<div class="bee-block bee-block-4 bee-social" bis_skin_checked="1">
 						<div class="content" bis_skin_checked="1"><span class="icon" style="padding:0 2.5px 0 2.5px;"><a href="https://www.instagram.com/grupojeza" target="_self" bis_skin_checked="1"><img alt="Instagram" src="https://app-rsrc.getbee.io/public/resources/social-networks-icon-sets/t-only-logo-white/instagram@2x.png" title="instagram"></a></span><span class="icon" style="padding:0 2.5px 0 2.5px;"><a href="https://api.whatsapp.com/send?phone=13239865066&amp;text=Hola%20Grupo%20Jeza!%20Estoy%20en%20su%20website%20y%20quiero%20informaci%C3%B3n%20sobre%3A" target="_blank" bis_skin_checked="1"><img alt="WhatsApp" src="https://app-rsrc.getbee.io/public/resources/social-networks-icon-sets/t-only-logo-white/whatsapp@2x.png" title="WhatsApp"></a></span></div>
 					</div>
-					<div class="bee-block bee-block-4 bee-spacer" bis_skin_checked="1">
+					<div class="bee-block bee-block-5 bee-spacer" bis_skin_checked="1">
 						<div class="spacer" style="height:10px;" bis_skin_checked="1"></div>
 					</div>
 				</div>
@@ -939,8 +1031,8 @@
 						</style>
 						<div class="promo-item" bis_skin_checked="1">
 							<div class="promo-image-wrapper" bis_skin_checked="1">
-								<a href="https://grupojeza.com/ofertas/plan-isla-margarita-express.html" bis_skin_checked="1" bis_size="{&quot;x&quot;:50,&quot;y&quot;:1587,&quot;w&quot;:350,&quot;h&quot;:373,&quot;abs_x&quot;:50,&quot;abs_y&quot;:1587}">
-									<img alt="Plan Isla Margarita Express" src="https://static.grupojeza.com/ofertas/PAQUETE%20MARGARITA%20EXPRESS%20WEB.jpg" bis_size="{&quot;x&quot;:50,&quot;y&quot;:1587,&quot;w&quot;:350,&quot;h&quot;:373,&quot;abs_x&quot;:50,&quot;abs_y&quot;:1587}" bis_id="bn_fi799x8rb6dx9a9sn1jvff">
+								<a href="https://grupojeza.com/ofertas/plan-isla-margarita-express.html" bis_skin_checked="1" bis_size="{&quot;x&quot;:50,&quot;y&quot;:1576,&quot;w&quot;:350,&quot;h&quot;:373,&quot;abs_x&quot;:50,&quot;abs_y&quot;:1576}">
+									<img alt="Plan Isla Margarita Express" src="https://static.grupojeza.com/ofertas/MARGARITA%20EXPRESS%20ABRIL%20EUROS%20WEB.jpg" bis_size="{&quot;x&quot;:50,&quot;y&quot;:1576,&quot;w&quot;:350,&quot;h&quot;:373,&quot;abs_x&quot;:50,&quot;abs_y&quot;:1576}" bis_id="bn_1gmbnlgz52tgq93mgx80ym">
 								</a>
 							</div>
 							<a class="promo-button" href="https://grupojeza.com/ofertas/plan-isla-margarita-express.html" bis_skin_checked="1">
