@@ -216,6 +216,74 @@
     return false;
   }
 </script>
-
+<div style="position: fixed; bottom: 30px; right: 30px; z-index: 9999; font-family: 'Montserrat', sans-serif;">
+    <!-- Fuente Montserrat -->
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Montserrat&display=swap');
+  
+      /* Estilo del botón WhatsApp */
+      .whatsapp-button {
+        display: inline-block;
+        background-color: #25D366;
+        color: white;
+        padding: 10px 15px;
+        border-radius: 5px;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 11px;
+        transition: background-color 0.3s ease;
+      }
+  
+      .whatsapp-button:hover {
+        background-color: #128C7E; /* Color más oscuro de WhatsApp */
+      }
+  
+      /* Estilo de la ventana flotante */
+      .whatsapp-popup {
+        position: absolute;
+        bottom: 100%;
+        right: 0;
+        margin-bottom: 20px;
+        width: 340px; /* Ancho fijo para pantallas grandes */
+        background-color: #fff;
+        border: 2px solid #25D366;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+        padding: 15px;
+        box-sizing: border-box;
+        color: #666;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 11px;
+      }
+  
+      /* Para pantallas menores a 600px */
+      @media (max-width: 600px) {
+        .whatsapp-popup {
+          width: 230px; /* Ancho fijo de 270px */
+          font-size: 12px; /* Reducir tamaño de fuente */
+        }
+  
+        .whatsapp-popup p {
+          word-wrap: break-word; /* Hacer que el texto se envuelva */
+        }
+      }
+  
+    </style>
+  
+    <!-- Ventana flotante -->
+    <div class="whatsapp-popup">
+      <strong style="color: #444; font-weight: bold;">¿Le interesa viajar a Isla Margarita?</strong>
+      <p style="margin: 8px 0 12px 0; color: #666; font-size: 13px;">Estoy en línea, le atiende Deborah, soy asesora de Grupo Jeza especialista en el destino. Haz click en el botón para conversar en vivo.</p>
+      <a href="https://wa.me/1234567890" target="_blank" class="whatsapp-button">
+        Ir a WhatsApp
+      </a>
+    </div>
+  
+    <!-- Botón WhatsApp -->
+    <a href="https://wa.me/1234567890" target="_blank" style="display: inline-block;">
+      <img src="https://static.grupojeza.com/interfaz/icono-whatsapp.png" alt="WhatsApp" style="width: 50px; height: 50px;">
+    </a>
+  </div>
+  
 </body>
 </html>
