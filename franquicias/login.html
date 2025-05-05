@@ -177,29 +177,45 @@
   </div>
 
   <script>
-    function login() {
-      const users = {
-        'usuario1': 'clave1',
-        'admin': 'admin123',
-        'prueba': '1234'
-      };
-
-      const username = document.getElementById('username').value.trim();
-      const password = document.getElementById('password').value.trim();
-      const errorMsg = document.getElementById('errorMsg');
-
-      if (users[username] === password) {
-        localStorage.setItem('loggedIn', 'true');
-
-        const params = new URLSearchParams(window.location.search);
-        const redirectTo = params.get('redirect') || 'index.html';
-        window.location.href = redirectTo;
-      } else {
-        errorMsg.textContent = 'Usuario o clave incorrectos. Si olvidó sus credensiales de acceso al sistema, comuniquese con nosotros';
+  function login() {
+    const users = {
+      'usuario1': {
+        clave: 'clave1',
+        nombre: 'María Rodríguez',
+        foto: 'https://randomuser.me/api/portraits/women/44.jpg'
+      },
+      'admin': {
+        clave: 'admin123',
+        nombre: 'Juan Pérez',
+        foto: 'https://randomuser.me/api/portraits/men/32.jpg'
+      },
+      'prueba': {
+        clave: '1234',
+        nombre: 'Lucía Fernández',
+        foto: 'https://randomuser.me/api/portraits/women/65.jpg'
       }
+    };
 
-      return false;
+    const username = document.getElementById('username').value.trim();
+    const password = document.getElementById('password').value.trim();
+    const errorMsg = document.getElementById('errorMsg');
+
+    if (users[username] && users[username].clave === password) {
+      localStorage.setItem('loggedIn', 'true');
+      localStorage.setItem('username', username);
+      localStorage.setItem('nombreUsuario', users[username].nombre);
+      localStorage.setItem('fotoUsuario', users[username].foto);
+
+      const params = new URLSearchParams(window.location.search);
+      const redirectTo = params.get('redirect') || 'index.html';
+      window.location.href = redirectTo;
+    } else {
+      errorMsg.textContent = 'Usuario o clave incorrectos. Si olvidó sus credenciales de acceso al sistema, comuníquese con nosotros.';
     }
-  </script>
+
+    return false;
+  }
+</script>
+
 </body>
 </html>
