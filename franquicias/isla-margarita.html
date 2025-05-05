@@ -14,21 +14,42 @@
   <!-- Contenido de la página Isla Margarita -->
   <div class="content">
     <h1>Bienvenido a la página de Isla Margarita</h1>
+    <div id="perfil" style="margin: 30px;"></div>
     <p>Este es el contenido protegido que solo puede ser visto por usuarios autenticados.</p>
     <!-- Aquí va el contenido que quieres que vean solo los usuarios logueados -->
   </div>
 
-<script>
-  // Verificación de login
-  if (localStorage.getItem('loggedIn') !== 'true') {
-    // Obtener la URL de la página actual y pasar solo la parte relativa
-    const currentUrl = window.location.pathname.split('/').slice(2).join('/');
-    
-    // Redirigir al login con la URL relativa como parámetro
-    window.location.href = '/franquicias/login.html?redirect=' + currentUrl;
-  }
-</script>
-Explicación:
+ <script>
+    // Paso 1: Verificar si está logueado
+    if (localStorage.getItem('loggedIn') !== 'true') {
+      const currentUrl = window.location.pathname.split('/').slice(2).join('/');
+      window.location.href = '/franquicias/login.html?redirect=' + currentUrl;
+    } else {
+      // Paso 2: Mostrar nombre y foto de perfil
+      document.addEventListener('DOMContentLoaded', () => {
+        const nombre = localStorage.getItem('nombreUsuario');
+        const foto = localStorage.getItem('fotoUsuario');
+
+        const perfilHTML = `
+          <div style="display: flex; align-items: center; gap: 12px; background: #f5f5f5; padding: 10px 20px; border-radius: 8px; max-width: 300px;">
+            <img src="${foto}" alt="Foto de perfil" style="width: 48px; height: 48px; border-radius: 50%; object-fit: cover;">
+            <div style="font-family: Montserrat, sans-serif;">
+              <div style="font-size: 16px; font-weight: 600;">Hola, ${nombre}</div>
+              <a href="#" onclick="logout()" style="font-size: 12px; color: #007bff; text-decoration: none;">Cerrar sesión</a>
+            </div>
+          </div>
+        `;
+
+        document.getElementById('perfil').innerHTML = perfilHTML;
+      });
+    }
+
+    // Función para cerrar sesión
+    function logout() {
+      localStorage.clear();
+      window.location.href = '/franquicias/login.html';
+    }
+  </script>
 
 </body>
 </html>
