@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Iniciar Sesión - Grupo Jeza</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    .container {
+      display: flex;
+      height: 100vh;
+    }
+
+    .left {
+      flex: 1;
+      background-image: url('https://media.gq.com.mx/photos/620e915c43f71a078a35533f/master/pass/playa.jpg');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+    }
+
+    .right {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: white; /* Cambio de color de fondo a blanco */
+      padding: 2em;
+      position: relative;
+    }
+
+    .logo-container {
+      text-align: center;
+      margin-bottom: 2em;
+      position: absolute;
+      top: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .logo-container img {
+      max-height: 50px; /* Tamaño más pequeño del logo */
+      height: auto;
+      transition: all 0.3s ease;
+    }
+
+    .logo-black {
+      display: block;
+    }
+
+    .logo-white {
+      display: none;
+    }
+
+    .form-box {
+      width: 100%;
+      max-width: 400px;
+      background: white;
+      padding: 2em;
+      border-radius: 10px;
+      text-align: center;
+    }
+
+    .form-box h2 {
+      margin-bottom: 1em;
+      color: #333;
+      font-weight: 600;
+    }
+
+    .form-box input {
+      width: 100%;
+      padding: 0.8em;
+      margin-bottom: 1em;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    .form-box button {
+      width: 100%;
+      padding: 0.8em;
+      background-color: #0056b3; /* Azul oscuro */
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    .form-box button:hover {
+      background-color: #003d7a; /* Azul más oscuro para hover */
+    }
+
+    .error {
+      color: red;
+      margin-top: 1em;
+    }
+
+    /* Responsive para menos de 900px */
+    @media (max-width: 899px) {
+      .container {
+        flex-direction: column;
+        height: 100vh;
+      }
+
+      .left {
+        display: block;
+        width: 100%;
+        background-image: url('https://media.gq.com.mx/photos/620e915c43f71a078a35533f/master/pass/playa.jpg');
+        background-size: cover;
+        background-position: center;
+      }
+
+      .right {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.15);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2em;
+      }
+
+      .form-box {
+        background-color: white;
+        width: 90%;
+        max-width: 350px;
+      }
+
+      .logo-black {
+        display: none;
+      }
+
+      .logo-white {
+        display: block;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="left"></div>
+    <div class="right">
+      <!-- Logo dentro de la columna derecha -->
+      <div class="logo-container">
+        <img src="https://static.grupojeza.com/branding/LOGO%20GRUPO%20JEZA%20LETRAS%20NEGRAS%20(1).png" alt="Logo Grupo Jeza" class="logo logo-black">
+        <img src="https://static.grupojeza.com/branding/logo%20grupo%20jeza%20blanco%20sin%20fondo.PNG" alt="Logo Grupo Jeza Blanco" class="logo logo-white">
+      </div>
+
+      <div class="form-box">
+        <h2>Acceso a Franquicias</h2>
+        <form onsubmit="return login();">
+          <input type="text" id="username" placeholder="Usuario" required>
+          <input type="password" id="password" placeholder="Clave" required>
+          <button type="submit">Ingresar</button>
+          <div class="error" id="errorMsg"></div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function login() {
+      const users = {
+        'usuario1': 'clave1',
+        'admin': 'admin123',
+        'prueba': '1234'
+      };
+
+      const username = document.getElementById('username').value.trim();
+      const password = document.getElementById('password').value.trim();
+      const errorMsg = document.getElementById('errorMsg');
+
+      if (users[username] === password) {
+        localStorage.setItem('loggedIn', 'true');
+
+        const params = new URLSearchParams(window.location.search);
+        const redirectTo = params.get('redirect') || 'index.html';
+        window.location.href = redirectTo;
+      } else {
+        errorMsg.textContent = 'Usuario o clave incorrectos. Si olvidó sus credensiales de acceso al sistema, comuniquese con nosotros';
+      }
+
+      return false;
+    }
+  </script>
+</body>
+</html>
