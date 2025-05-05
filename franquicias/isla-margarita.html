@@ -1,1 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Isla Margarita - Franquicias</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    /* Estilos para la página, puedes incluirlos o importarlos desde un archivo CSS */
+  </style>
+</head>
+<body>
+
+  <!-- Contenido de la página Isla Margarita -->
+  <div class="content">
+    <h1>Bienvenido a la página de Isla Margarita</h1>
+    <p>Este es el contenido protegido que solo puede ser visto por usuarios autenticados.</p>
+    <!-- Aquí va el contenido que quieres que vean solo los usuarios logueados -->
+  </div>
+
+  <script>
+    // Verificación de login
+    if (localStorage.getItem('loggedIn') !== 'true') {
+      // Si no está logueado, redirigir al login con la URL de esta página como parámetro
+      window.location.href = 'login.html?redirect=franquicias/isla-margarita.html';
+    }
+  </script>
+
+</body>
+</html>
 
