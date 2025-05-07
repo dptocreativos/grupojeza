@@ -162,9 +162,7 @@
       position: fixed;
       z-index: 9999;
       text-decoration: none;
-      display: flex;
-      align-items: center;
-      gap: 8px;
+      display: inline-block;
       background-color: #fff;
       padding: 10px 15px;
       border-radius: 8px;
@@ -173,12 +171,12 @@
       font-size: 16px;
       color: #333;
       border: 1px solid #ddd;
+      transition: background-color 0.3s ease, color 0.3s ease;
     }
 
-    .boton-home img {
-      width: 20px;
-      height: 20px;
-      filter: grayscale(100%);
+    .boton-home:hover {
+      background-color: #007bff; /* Fondo azul */
+      color: #fff; /* Texto blanco */
     }
 
     @media (min-width: 901px) {
@@ -197,11 +195,11 @@
     }
   </style>
 
-  <a href="https://grupojeza.com" class="boton-home">
-    <img src="https://static.grupojeza.com/interfaz/home.png" alt="GrupoJeza.com" />
+  <a href="/" class="boton-home">
     Ir al Home
   </a>
 </div>
+
 
 
   
