@@ -1146,27 +1146,136 @@
 
 
 		<div class="bee-row bee-row-3">
-			<div class="bee-row-content">
-			  <div class="bee-col bee-col-1 bee-col-w12">
-				<div class="bee-block bee-block-1 bee-heading">
-				  <h2><span class="tinyMce-placeholder">Viajes Programados</span></h2>
-				</div>
-				<div class="bee-block bee-block-2 bee-paragraph">
-				<p>
-	Pantalla de salidas y retornos, planes de vacaciones con vuelos programados en América.
-	<b style="background-color: #32d950; color: white; padding: 1px 5px; border-radius: 5px; font-weight: bold; display: inline-block;">
-	  CUPOS DISPONIBLES
-	</b>.
-  </p>
-				</div>
-				<div class="responsive-padding">
-					<img 
-					  src="https://static.grupojeza.com/imagenes/cartelera-viajes.png" 
-					  style="width: 100%; height: auto; display: block;" 
-					  alt="Viaje programado a Isla Margarita desde La Fría, Táchira">
-				  </div>
-			  </div>
-			</div>
+
+
+			
+
+<div id="wrapper" style="box-sizing: border-box;">
+
+  <div id="contenedor" style="max-width: 100%; border-radius: 20px; overflow: hidden; 
+    background-image: url('https://media.gq.com.mx/photos/620e915c43f71a078a35533f/master/pass/playa.jpg'); 
+    background-size: cover; background-position: left top; display: flex; flex-wrap: wrap; 
+    position: relative; font-family: 'Montserrat', sans-serif;">
+
+    <div style="flex: 1 1 300px; padding: 20px 20px 30px 20px; box-sizing: border-box; color: white; z-index: 2; position: relative; font-weight: 400;">
+      <div style="height: 200px;"></div>
+    </div>
+
+    <div style="flex: 1 1 300px; padding: 20px 20px 30px 20px; box-sizing: border-box; color: white; z-index: 2; position: relative; font-weight: 400;">
+      <h2 style="margin: 0; font-family: 'Montserrat', sans-serif; font-weight: 400; font-size: 25px;"><b>Tus Mejores vacaciones en El Caribe</b></h2>
+      <br>
+      <p>Selecciona tu opción favorita hacia Isla Margarita.</p>
+      <br>
+      <img src="https://static.grupojeza.com/banners/ititnerarios-atc.png" style="width: 100%; height: auto;" alt="Itinerario ATC">
+      <p style="font-size: 14px;"><br>Recibe la cotización de tu viaje programado haciendo click en el botón.</p>
+      <br>
+
+      <a href="https://wa.link/y20apv" target="_blank" rel="noopener noreferrer" style="
+        display: inline-block;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 14px;
+        padding: 8px 20px;
+        border: 1px solid white;
+        border-radius: 100px;
+        background-color: transparent;
+        color: white;
+        cursor: pointer;
+        text-decoration: none;
+        transition: background-color 0.3s, color 0.3s;"
+        onmouseover="this.style.backgroundColor='white'; this.style.color='black';"
+        onmouseout="this.style.backgroundColor='transparent'; this.style.color='white';">
+        Pedir cotización
+      </a>
+
+    </div>
+
+  </div>
+</div>
+
+<script>
+  // Importar Montserrat
+  const style = document.createElement('style');
+  style.innerHTML = `
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap');
+  `;
+  document.head.appendChild(style);
+
+  function aplicarEstilos() {
+    const wrapper = document.getElementById('wrapper');
+    const contenedor = document.getElementById('contenedor');
+    const sombraExistente = document.getElementById('sombra-dinamica');
+    if (sombraExistente) sombraExistente.remove();
+
+    const columnas = contenedor.children;
+
+    if (window.innerWidth > 770) {
+      wrapper.style.padding = '50px 50px 0 50px'; // Top Right Bottom Left
+      contenedor.style.flexDirection = 'row';
+      contenedor.style.backgroundImage = "url('https://static.grupojeza.com/imagenes/foto-viaje.jpg')";
+      contenedor.style.backgroundPosition = 'left top';
+    } else {
+      wrapper.style.padding = '40px 30px 50px 30px';
+      contenedor.style.flexDirection = 'column';
+      contenedor.style.backgroundImage = "url('https://static.grupojeza.com/imagenes/foto-viaje-vm.jpg')";
+      contenedor.style.backgroundPosition = 'top center';
+    }
+
+    for (let col of columnas) {
+      col.style.flex = (window.innerWidth > 770) ? '1 1 300px' : '0 0 auto';
+      col.style.padding = (window.innerWidth > 770) ? '40px 70px 50px 0px' : '30px 30px 40px 30px';
+      col.style.fontFamily = "'Montserrat', sans-serif";
+      col.style.fontWeight = '400';
+    }
+
+    const sombra = document.createElement('div');
+    sombra.id = 'sombra-dinamica';
+
+    const sombraEstilo = `
+      z-index: 1;
+      pointer-events: none;
+      border-radius: 20px;
+      background: linear-gradient(${window.innerWidth > 770 ? 'to left' : 'to top'},
+        rgba(0,0,0,1) 40%,
+        rgba(0,0,0,0.95) 50%,
+        rgba(0,0,0,0.85) 60%,
+        rgba(0,0,0,0.7) 70%,
+        rgba(0,0,0,0.5) 80%,
+        rgba(0,0,0,0.3) 85%,
+        rgba(0,0,0,0.15) 90%,
+        rgba(0,0,0,0.05) 95%,
+        rgba(0,0,0,0) 100%);
+    `;
+
+    if (window.innerWidth > 770) {
+      sombra.setAttribute('style', `
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        width: 70%;
+        ${sombraEstilo}
+      `);
+    } else {
+      sombra.setAttribute('style', `
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 70%;
+        ${sombraEstilo}
+      `);
+    }
+
+    contenedor.appendChild(sombra);
+  }
+
+  aplicarEstilos();
+  window.addEventListener('resize', aplicarEstilos);
+</script>
+
+
+
+
 		  </div>
 		  
 
