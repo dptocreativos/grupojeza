@@ -921,95 +921,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="bee-row bee-row-2">
-			<div class="bee-row-content">
-				<div class="bee-col bee-col-1 bee-col-w12">
-					<div class="bee-block bee-block-1 bee-spacer">
-						<div class="spacer" style="height:35px;"></div>
-					</div>
-					<div class="bee-block bee-block-2 bee-html-block">
-						<meta charset="utf-8" />
-						<meta content="width=device-width, initial-scale=1.0" name="viewport" />
-						<style>
-							.marquee-center {
-							  width: 100%;
-							  height: 40px; /* Aquí está la clave */
-							  display: flex;
-							  justify-content: center;
-							  align-items: center;
-							  background: none;
-							  color: white;
-							  font-family: 'Montserrat', sans-serif;
-							  font-size: 24px;
-							  overflow: hidden;
-							  position: relative;
-							  line-height: 1;
-							  padding: 0;
-							  margin: 0;
-							}
-						  
-							.word {
-							  position: absolute;
-							  opacity: 0;
-							  filter: blur(10px);
-							  transform: scale(1.2);
-							  transition: all 1s ease;
-							  will-change: opacity, filter, transform;
-							  margin: 0;
-							  padding: 0;
-							  line-height: 1;
-							}
-						  
-							.word.active {
-							  opacity: 1;
-							  filter: blur(0px);
-							  transform: scale(1);
-							}
-						  </style>
-						  
-						  <div class="marquee-center" id="marquee"></div>
-						  
-						  <script>
-							const palabras = [
-							  "¡Viajes felices desde 2004!", "Bodas", "Hoteles", "Boletos Aéreos", "Tours",
-							  "Excursiones", "Apartamentos Vacacionales", "Alquiler de autos", "Pedidas de mano",
-							  "Viajes Corporativos", "Yates", "Mansiones", "Globos Aerostáticos", "Cruceros",
-							  "Tour de Quinceañeras", "Viajes Escolares", "Congresos", "Conferencias",
-							  "Limusinas", "Autos Blindados"
-							];
-						  
-							const container = document.getElementById("marquee");
-							let index = 0;
-						  
-							function mostrarPalabra() {
-							  container.innerHTML = ""; // limpiar palabra anterior
-							  const span = document.createElement("span");
-							  span.className = "word";
-							  span.textContent = palabras[index];
-							  container.appendChild(span);
-						  
-							  // Forzar reflow
-							  void span.offsetWidth;
-						  
-							  span.classList.add("active");
-						  
-							  index = (index + 1) % palabras.length;
-							  setTimeout(mostrarPalabra, 2500); // cada 2.5 segundos
-							}
-						  
-							mostrarPalabra();
-						  </script>
-						  
-						  
-						  
-						  
-					</div>
-					<div class="bee-block bee-block-3 bee-spacer">
-						<div class="spacer" style="height:35px;"></div>
-					</div>
-				</div>
-			</div>
-		</div>
+
 
 
 
@@ -4069,6 +3981,5 @@
 
 
 </html>
-
 
 
