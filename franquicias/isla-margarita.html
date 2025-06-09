@@ -11,6 +11,7 @@
       font-family: 'Montserrat', sans-serif;
       background-color: #ffffff;
     }
+
     .header {
       display: flex;
       justify-content: space-between;
@@ -19,19 +20,30 @@
       background-color: #ffffff;
       border-bottom: 1px solid #ddd;
     }
+
     .logo {
       height: 50px;
     }
+
     .content {
-      padding: 30px 20px;
+      padding: 20px 30px 30px 30px; /* Default for small screens */
     }
+
     h1 {
       font-size: 24px;
       font-weight: 600;
       margin-bottom: 10px;
     }
+
     p {
       font-size: 16px;
+    }
+
+    /* Espaciado para pantallas grandes (770px en adelante) */
+    @media (min-width: 770px) {
+      .content {
+        padding: 20px 50px 40px 50px;
+      }
     }
   </style>
 </head>
