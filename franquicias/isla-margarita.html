@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html lang="es">
-<!DOCTYPE html>
-<html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Solicitud de Cotización</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Isla Margarita | Franquicias Grupo Jeza</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
   <style>
     body {
@@ -36,54 +35,6 @@
     }
   </style>
 </head>
-<body>
-
-  <div class="header">
-    <img src="https://static.grupojeza.com/branding/LOGO%20GRUPO%20JEZA%20LETRAS%20NEGRAS%20(1).png" alt="Logo Grupo Jeza" class="logo">
-    <div id="perfil"></div>
-  </div>
-
-  <div class="content">
-    <h1>Solicitud de cotización para Isla Margarita - Venezuela</h1>
-    <p>Diligencie el formulario a continuación y en un periodo máximo de 48 a 72 horas hábiles le estará llegando a su correo de franquicia la cotización.</p>
-    <!-- Aquí puedes insertar tu formulario de Google -->
-  </div>
-
-  <script>
-    // Paso 1: Verificar si está logueado
-    if (localStorage.getItem('loggedIn') !== 'true') {
-      const currentUrl = window.location.pathname.split('/').slice(2).join('/');
-      window.location.href = '/franquicias/login.html?redirect=' + currentUrl;
-    } else {
-      // Paso 2: Mostrar nombre y foto de perfil
-      document.addEventListener('DOMContentLoaded', () => {
-        const nombre = localStorage.getItem('nombreUsuario');
-        const foto = localStorage.getItem('fotoUsuario');
-
-        const perfilHTML = `
-          <div style="display: flex; align-items: center; gap: 12px; background: #f5f5f5; padding: 10px 20px; border-radius: 8px;">
-            <img src="${foto}" alt="Foto de perfil" style="width: 48px; height: 48px; border-radius: 50%; object-fit: cover;">
-            <div style="font-family: Montserrat, sans-serif;">
-              <div style="font-size: 16px; font-weight: 600;">Hola, ${nombre}</div>
-              <a href="#" onclick="logout()" style="font-size: 12px; color: #007bff; text-decoration: none;">Cerrar sesión</a>
-            </div>
-          </div>
-        `;
-
-        document.getElementById('perfil').innerHTML = perfilHTML;
-      });
-    }
-
-    // Función para cerrar sesión
-    function logout() {
-      localStorage.clear();
-      window.location.href = '/franquicias/login.html';
-    }
-  </script>
-
-</body>
-</html>
-
 <body>
 
   <div class="header">
