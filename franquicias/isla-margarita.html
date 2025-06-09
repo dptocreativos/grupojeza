@@ -12,7 +12,13 @@
 <body>
 
 
-	<script>
+
+
+<div style="display: flex; height: 100vh; font-family: Montserrat, sans-serif;">
+
+  <!-- Columna 1: Menú lateral -->
+
+<script>
 		// Paso 1: Verificar si está logueado
 		if (localStorage.getItem('loggedIn') !== 'true') {
 		  const currentUrl = window.location.pathname.split('/').slice(2).join('/');
@@ -45,9 +51,6 @@
 	  </script>
 
 
-<div style="display: flex; height: 100vh; font-family: Montserrat, sans-serif;">
-
-  <!-- Columna 1: Menú lateral -->
    <div id="perfil" style="margin: 30px;"></div>
   <div style="width: 80px; background-color: #111827; color: white; display: flex; flex-direction: column; align-items: center; padding: 20px 0; gap: 20px;">
     <!-- Ejemplo de botones -->
