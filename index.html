@@ -1417,7 +1417,7 @@
 					</div>
 	
 
-<div id="gallery-container" style="
+<div id="gallery-container-full" style="
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
@@ -1434,7 +1434,7 @@
 
 <script>
   function ajustarGaleria() {
-    const container = document.getElementById("gallery-container");
+    const container = document.getElementById("gallery-container-full");
     if (window.innerWidth <= 769) {
       container.style.gridTemplateColumns = "repeat(2, 1fr)";
     } else {
