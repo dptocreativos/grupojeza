@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Página principal -->
+  <url>
+    <loc>https://grupojeza.com/</loc>
+    <priority>1.0</priority>
+  </url>
+
+    <!-- Página PAQUETES -->
+  <url>
+    <loc>https://grupojeza.com/paquetes</loc>
+    <priority>0.8</priority>
+  </url>
+
+      <!-- Sub-Páginas PAQUETES (países) -->
+  <url>
+    <loc>https://grupojeza.com/paquetes/argentina</loc>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://grupojeza.com/paquetes/australia</loc>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://grupojeza.com/paquetes/china</loc>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://grupojeza.com/paquetes/colombia</loc>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://grupojeza.com/paquetes/costa-rica</loc>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://grupojeza.com/paquetes/egipto</loc>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://grupojeza.com/paquetes/espana</loc>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://grupojeza.com/paquetes/estados-unidos</loc>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://grupojeza.com/paquetes/guatemala</loc>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://grupojeza.com/paquetes/india</loc>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://grupojeza.com/paquetes/italia</loc>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://grupojeza.com/paquetes/japon</loc>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://grupojeza.com/paquetes/mexico</loc>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://grupojeza.com/paquetes/panama</loc>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://grupojeza.com/paquetes/peru</loc>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://grupojeza.com/paquetes/rusia</loc>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://grupojeza.com/paquetes/venezuela</loc>
+    <priority>0.7</priority>
+  </url>
+
+</urlset>
