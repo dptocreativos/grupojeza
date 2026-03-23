@@ -40,6 +40,7 @@
   align-items:center;
   justify-content:center;
   z-index:999999;
+  opacity:1;
 }
 
 #preloader-box{
@@ -49,10 +50,22 @@
   padding-bottom:50px;
 }
 
+/* LOGO: entrada progresiva sin repetición */
 #preloader img{
   width:250px;
   max-width:90%;
   margin-bottom:18px;
+
+  opacity:0;
+  transform:translateY(10px);
+  animation:logoIntro .8s ease forwards;
+}
+
+@keyframes logoIntro{
+  to{
+    opacity:1;
+    transform:translateY(0);
+  }
 }
 
 #preloader-bar{
@@ -70,7 +83,6 @@
   background:#001292;
   border-radius:50px;
 
-  /* Animación optimizada (no lineal para efecto “rápido”) */
   animation:preloaderLoad 3.6s cubic-bezier(.4,0,.2,1) forwards;
 }
 
@@ -80,9 +92,10 @@
   100%{width:100%;}
 }
 
+/* Fade más suave */
 #preloader.fadeout{
   opacity:0;
-  transition:opacity .35s ease;
+  transition:opacity .6s ease;
 }
 </style>
 
@@ -99,18 +112,26 @@
 </div>
 
 <script>
+// sincroniza con tiempo real (evita corte brusco)
+const start = performance.now();
+
 window.addEventListener("load", function(){
+
+  const elapsed = performance.now() - start;
+  const target = 3200; // empieza fade antes de terminar
+
+  const delay = Math.max(target - elapsed, 0);
 
   setTimeout(function(){
     const preloader = document.getElementById("preloader");
-    
+
     preloader.classList.add("fadeout");
 
     setTimeout(function(){
       preloader.style.display = "none";
-    }, 350);
+    }, 600);
 
-  }, 3500); // desaparece antes de que termine completamente → efecto rápido
+  }, delay);
 
 });
 </script>
