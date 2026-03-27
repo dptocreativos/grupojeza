@@ -30,18 +30,117 @@
     }
   </style>
 
+<style>
+#preloader{
+  position:fixed;
+  inset:0;
+  background:#ffffff;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  z-index:999999;
+  opacity:1;
+}
+
+#preloader-box{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  padding-bottom:50px;
+}
+
+/* LOGO: entrada progresiva sin repetición */
+#preloader img{
+  width:250px;
+  max-width:90%;
+  margin-bottom:18px;
+
+  opacity:0;
+  transform:translateY(10px);
+  animation:logoIntro .8s ease forwards;
+}
+
+@keyframes logoIntro{
+  to{
+    opacity:1;
+    transform:translateY(0);
+  }
+}
+
+#preloader-bar{
+  width:250px;
+  max-width:90%;
+  height:10px;
+  background:#e6e6e6;
+  border-radius:50px;
+  overflow:hidden;
+}
+
+#preloader-progress{
+  width:0%;
+  height:100%;
+  background:#001292;
+  border-radius:50px;
+
+  animation:preloaderLoad 3.6s cubic-bezier(.4,0,.2,1) forwards;
+}
+
+@keyframes preloaderLoad{
+  0%{width:0%;}
+  70%{width:85%;}
+  100%{width:100%;}
+}
+
+/* Fade más suave */
+#preloader.fadeout{
+  opacity:0;
+  transition:opacity .6s ease;
+}
+</style>
+
+<div id="preloader">
+  <div id="preloader-box">
+
+    <img src="https://static.wixstatic.com/media/ca65cb_4142497416554a3aad076f03992d631c~mv2.png/v1/fill/w_476,h_100,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Logo%20Grupo%20Jeza%20-%20Hoteler%C3%ADa%20y%20Turismo.png">
+
+    <div id="preloader-bar">
+      <div id="preloader-progress"></div>
+    </div>
+
+  </div>
+</div>
+
+<script>
+// sincroniza con tiempo real (evita corte brusco)
+const start = performance.now();
+
+window.addEventListener("load", function(){
+
+  const elapsed = performance.now() - start;
+  const target = 3200; // empieza fade antes de terminar
+
+  const delay = Math.max(target - elapsed, 0);
+
+  setTimeout(function(){
+    const preloader = document.getElementById("preloader");
+
+    preloader.classList.add("fadeout");
+
+    setTimeout(function(){
+      preloader.style.display = "none";
+    }, 600);
+
+  }, delay);
+
+});
+</script>
+
+
+  
 </div>
   
 </head>
 <body>
-<div id="preloader">
-  <div id="preloader-box">
-    <img src="https://static.wixstatic.com/media/ca65cb_4142497416554a3aad076f03992d631c~mv2.png">
-    <div id="preloader-bar">
-      <div id="preloader-progress"></div>
-    </div>
-  </div>
-</div>
   
 <div id="ughjuygh9875"></div>
   
