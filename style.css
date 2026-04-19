@@ -19,7 +19,7 @@
 @keyframes anim18_9741 {0%{transform: rotate(0deg)}50%{transform: rotate(180deg)}100%{transform: rotate(360deg)}}
 @keyframes anim19_7912 {0%{transform: rotate(0deg)}50%{transform: rotate(180deg)}100%{transform: rotate(360deg)}}
 
-
+/* CONTENEDOR */
 #preloaderNEW{
   position:fixed;
   inset:0;
@@ -30,9 +30,11 @@
   z-index:999999;
   opacity:1;
 
+  /* Auto ocultado */
   animation: hidePreloader 4.2s forwards;
 }
 
+/* LOGO */
 #preloaderNEW::before{
   content:"";
   position:absolute;
@@ -46,18 +48,19 @@
   background-repeat:no-repeat;
   background-position:center;
 
-  top:calc(50% - 70px);
+  top:calc(50% - 70px - 40px); /* ← ajuste aquí */
 
   opacity:0;
   transform:translateY(10px);
   animation:logoIntro .8s ease forwards;
 }
 
+/* BARRA */
 #preloaderNEW::after{
   content:"";
   position:absolute;
 
-  top:calc(50% + 20px);
+  top:calc(50% + 20px - 40px); /* ← ajuste aquí */
 
   width:250px;
   max-width:90%;
@@ -72,6 +75,7 @@
   animation:preloaderLoad 3.6s cubic-bezier(.4,0,.2,1) forwards;
 }
 
+/* ANIMACIÓN LOGO */
 @keyframes logoIntro{
   to{
     opacity:1;
@@ -79,12 +83,14 @@
   }
 }
 
+/* ANIMACIÓN BARRA */
 @keyframes preloaderLoad{
   0%{ background-size:0% 100%, 100% 100%; }
   70%{ background-size:85% 100%, 100% 100%; }
   100%{ background-size:100% 100%, 100% 100%; }
 }
 
+/* OCULTAR TODO */
 @keyframes hidePreloader{
   0%{ opacity:1; }
   85%{ opacity:1; }
