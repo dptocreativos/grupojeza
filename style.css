@@ -19,6 +19,84 @@
 @keyframes anim18_9741 {0%{transform: rotate(0deg)}50%{transform: rotate(180deg)}100%{transform: rotate(360deg)}}
 @keyframes anim19_7912 {0%{transform: rotate(0deg)}50%{transform: rotate(180deg)}100%{transform: rotate(360deg)}}
 
+
+#preloaderNEW{
+  position:fixed;
+  inset:0;
+  background:#ffffff;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  z-index:999999;
+  opacity:1;
+
+  animation: hidePreloader 4.2s forwards;
+}
+
+#preloaderNEW::before{
+  content:"";
+  position:absolute;
+
+  width:250px;
+  max-width:90%;
+  height:100px;
+
+  background-image:url("https://static.wixstatic.com/media/ca65cb_4142497416554a3aad076f03992d631c~mv2.png/v1/fill/w_476,h_100,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Logo%20Grupo%20Jeza%20-%20Hoteler%C3%ADa%20y%20Turismo.png");
+  background-size:contain;
+  background-repeat:no-repeat;
+  background-position:center;
+
+  top:calc(50% - 70px);
+
+  opacity:0;
+  transform:translateY(10px);
+  animation:logoIntro .8s ease forwards;
+}
+
+#preloaderNEW::after{
+  content:"";
+  position:absolute;
+
+  top:calc(50% + 20px);
+
+  width:250px;
+  max-width:90%;
+  height:10px;
+
+  border-radius:50px;
+
+  background:
+    linear-gradient(#001292,#001292) left/0% 100% no-repeat,
+    #e6e6e6;
+
+  animation:preloaderLoad 3.6s cubic-bezier(.4,0,.2,1) forwards;
+}
+
+@keyframes logoIntro{
+  to{
+    opacity:1;
+    transform:translateY(0);
+  }
+}
+
+@keyframes preloaderLoad{
+  0%{ background-size:0% 100%, 100% 100%; }
+  70%{ background-size:85% 100%, 100% 100%; }
+  100%{ background-size:100% 100%, 100% 100%; }
+}
+
+@keyframes hidePreloader{
+  0%{ opacity:1; }
+  85%{ opacity:1; }
+  100%{
+    opacity:0;
+    visibility:hidden;
+    pointer-events:none;
+  }
+}
+
+////
+
 #x6yyyld573tf8w7lu7i0 {
   display: grid;
   width: 317px;
