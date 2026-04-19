@@ -48,7 +48,7 @@
   background-repeat:no-repeat;
   background-position:center;
 
-  top:calc(50% - 70px - 40px); /* ← ajuste aquí */
+  top:calc(50% - 70px - 50px); /* ← ajuste aquí */
 
   opacity:0;
   transform:translateY(10px);
@@ -60,7 +60,7 @@
   content:"";
   position:absolute;
 
-  top:calc(50% + 20px - 40px); /* ← ajuste aquí */
+  top:calc(50% + 20px - 50px); /* ← ajuste aquí */
 
   width:250px;
   max-width:90%;
@@ -101,7 +101,7 @@
   }
 }
 
-////
+/* */
 
 #x6yyyld573tf8w7lu7i0 {
   display: grid;
